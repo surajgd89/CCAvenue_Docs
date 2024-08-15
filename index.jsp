@@ -19,11 +19,13 @@
     <main class="wrapper">
 
         <section class="intro">
-            <h1 class="intro__head">Explore our guides and examples to integrate CCAvenue</h1>
-            <div class="intro__search">
-                <input type="text" class="search__control">
+            <div class="container">
+                <h1 class="intro__head">Documentation</h1>
+                <div class="intro__search">
+                    <i class="fa fa-search"></i> Search the
+                </div>
+                <p class="intro__desc">Explore our guides and examples to integrate CCAvenue</p>
             </div>
-            <p class="intro__desc">Explore our guides and examples to integrate CCAvenue</p>
         </section>
 
         <section class="statred">

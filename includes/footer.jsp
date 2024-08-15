@@ -4,9 +4,11 @@
 </section>
 
 <footer class="footer">
-    <section class="footer_data">Copyright
-        <i class="fal fa-copy"></i>
-        <a href="javascript:void(0)">INFIBEAM AVENUES.</a>
-        All Rights Reserved.
-    </section>
+    <div class="container">
+        <div class="footer__data">Copyright
+            <i class="fal fa-copy"></i>
+            <a href="javascript:void(0)">INFIBEAM AVENUES.</a>
+            All Rights Reserved.
+        </div>
+    </div>
 </footer>
