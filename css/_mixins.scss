@@ -39,3 +39,18 @@
         @content;
     }
 }
+
+@mixin scrollbar() {
+    ::-webkit-scrollbar {
+        width: var(--scroll-width);
+    }
+
+    ::-webkit-scrollbar-track {
+        background: var(--scroll-track);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--scroll-thumb);
+        border-radius: var(--scroll-radius);
+    }
+}

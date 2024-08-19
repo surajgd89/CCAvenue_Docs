@@ -19,7 +19,7 @@
         <section class="intro">
             <div class="container">
                 <h1 class="head">Documentation</h1>
-                <div class="search open-modal" data-modal="#searchModal"><i class="far fa-search"></i> Search the docs
+                <div class="search clk-search-modal"><i class="far fa-search"></i> Search the docs
                 </div>
                 <p class="desc">Explore our guides and examples to integrate CCAvenue</p>
             </div>
@@ -477,7 +477,6 @@
             </div>
         </section>
     </main>
-
 
     <!-- SEARCH -->
     <jsp:include page="includes/search.jsp" />
