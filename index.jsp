@@ -4,10 +4,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CCAvenue Docs</title>
+    <title>CCAvenue Docs (Beta)</title>
 
-    <!-- CSS -->
+    <!-- TYPEAHEAD -->
+    <!-- <link rel="stylesheet" href="plugins/typeahead/jquery.typeahead.min.css" /> -->
+
+    <!-- STYLES -->
     <link rel="stylesheet" href="css/styles.css" />
+
 </head>
 
 <body>
@@ -19,7 +23,7 @@
         <section class="intro">
             <div class="container">
                 <h1 class="head">Documentation</h1>
-                <div class="search clk-search-modal"><i class="far fa-search"></i> Search the docs
+                <div class="search open-search-modal"><i class="far fa-search"></i> Search the docs
                 </div>
                 <p class="desc">Explore our guides and examples to integrate CCAvenue</p>
             </div>
@@ -484,9 +488,15 @@
     <!-- FOOTER -->
     <jsp:include page="includes/footer.jsp" />
 
-    <!-- JS -->
+    <!-- JQUERY -->
     <script src="plugins/jquery/jquery.min.js"></script>
+
+    <!-- TYPEAHEAD -->
+    <script src="plugins/typeahead/typeahead.bundle.js"></script>
+
+    <!-- SCRIPTS -->
     <script src="js/scripts.js"></script>
+
 </body>
 
 </html>

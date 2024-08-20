@@ -463,7 +463,7 @@ body {
 }
 
 //Modal
-.search-opened {
+.modal-open {
     overflow: hidden;
 }
 
@@ -482,7 +482,7 @@ body {
         position: relative;
         width: 100%;
         max-width: 78.7rem;
-        max-height: 100%;
+        min-height: 70rem;
         margin: 2rem;
         border-radius: 10px;
         background-color: #f6f9fb;
@@ -491,100 +491,94 @@ body {
 
         .search-modal-body {
             padding: 2.7rem;
-            min-height: 100%;
+            min-height: inherit;
 
             .search-control {
-                border-radius: 6px;
-                border: 1px solid #cfd6e3;
-                background: #fff;
                 display: flex;
                 align-items: center;
-                min-height: 4.8rem;
-                overflow: hidden;
+                position: relative;
 
-                &:focus-within {
-                    border-color: #1572e8;
-                }
+                .twitter-typeahead {
+                    width: 100%;
 
-                input {
-                    flex-grow: 1;
-                    border: 0;
-                    outline: 0;
-                    padding: 0.6rem 1.2rem;
-                    min-height: inherit;
-                    color: #132644;
-                    font-size: 1.5rem;
+                    .tt-menu {
+                        width: 100%;
+                        background-color: #f7fafc;
+                        border-radius: 0.6rem;
+                        box-shadow: 0 0 3rem 0 rgba(32, 60, 114, 0.14);
+                        top: 0.4rem;
 
-                    &:focus {
-                        border: 0;
-                        outline: 0;
+                        .tt-dataset {
+                            .tt-suggestion {
+                                padding: 1rem 2rem;
+                                font-size: 1.4rem;
+                                display: flex;
+                                color: #132644;
+                                white-space: pre;
+                                cursor: pointer;
+
+                                &:first-child {
+                                    margin-top: 1rem;
+                                }
+
+                                &:last-child {
+                                    margin-bottom: 1rem;
+                                }
+
+                                &:hover,
+                                &:focus {
+                                    background-color: #e4e9ec;
+                                }
+                            }
+
+                            .tt-highlight {
+                                color: #1572e8;
+                                font-weight: inherit;
+                            }
+                        }
                     }
                 }
 
-                span {
-                    font-size: 1.4rem;
-                    background: #fff;
+                .typeahead {
+                    border: 0;
+                    outline: 0;
                     color: #132644;
-                    min-height: inherit;
-                    padding: 0 1.5rem;
-                    display: inline-flex;
-                    align-items: center;
+                    font-size: 1.5rem;
+                    padding: 0.6rem 2rem;
+                    padding-right: 6rem;
+                    width: 100%;
+                    border-radius: 6px;
+                    border: 1px solid #cfd6e3;
+                    background: #fff;
+                    min-height: 4.8rem;
+
+                    &:focus {
+                        outline: 0;
+                        border-color: #1572e8;
+                    }
+                }
+
+                .clear {
+                    font-size: 1.4rem;
+                    color: #132644;
                     cursor: pointer;
+                    position: absolute;
+                    right: 1.5rem;
+                    top: 1.5rem;
                 }
             }
 
             .search-result {
-                background-color: #f7fafc;
-                padding: 1rem;
-                border-radius: 0.6rem;
-                margin-top: 0.4rem;
-                box-shadow: 0 0 3rem 0 rgba(32, 60, 114, 0.14);
-
-                .search-list {
-                    padding: 0;
-                    margin: 0;
-
-                    .search-item {
-                        list-style: none;
-                        padding: 1rem;
-                        font-size: 1.4rem;
-
-                        .search-link {
-                            display: inline-flex;
-                            text-decoration: none;
-                            color: #132644;
-                        }
-                    }
-                }
-            }
-
-            .search-data {
                 margin-top: 2rem;
 
-                .data-head {
-                    display: flex;
-
-                    .data-target {
-                        font-size: 1.4rem;
-                        font-weight: 500;
-                        padding-bottom: 0.6rem;
-                        margin-left: 2rem;
-                        cursor: pointer;
-                        color: #132644;
-
-                        i {
-                            margin-right: 0.4rem;
-                            font-style: 1.3rem;
-                        }
-
-                        &.active {
-                            color: #1572e8;
-                            border-bottom: 2px solid #1572e8;
-                        }
-                    }
+                .result-head {
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                    margin-bottom: 1rem;
+                    color: rgba(19, 38, 68, 0.5);
                 }
 
-                .data-body {
+                .result-body {
                     background-color: #f7fafc;
                     border-radius: 0.6rem;
                     padding: 1rem 0;
@@ -592,11 +586,11 @@ body {
                     overflow-y: auto;
                     max-height: 13.5rem;
 
-                    .data-list {
+                    .result-list {
                         padding: 0;
                         margin: 0;
 
-                        .data-item {
+                        .result-item {
                             list-style: none;
                             padding: 1rem 2rem;
                             transition: all 300ms;
@@ -605,15 +599,15 @@ body {
                                 margin-bottom: 0;
                             }
 
-                            .data-link {
+                            .result-link {
                                 text-decoration: none;
-                                .data-title {
+                                .result-title {
                                     color: #132644;
                                     margin-bottom: 0.6rem;
                                     font-weight: 500;
                                     font-size: 1.4rem;
                                 }
-                                .data-breadcrumb {
+                                .result-breadcrumb {
                                     color: #132644;
                                     font-size: 1.3rem;
                                 }
@@ -625,6 +619,7 @@ body {
 
             .recent-search {
                 margin-top: 2rem;
+
                 .recent-title {
                     font-size: 1.4rem;
                     font-weight: 600;
