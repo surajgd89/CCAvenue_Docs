@@ -2,12 +2,14 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CCAvenue Docs (Beta)</title>
 
-    <!-- TYPEAHEAD -->
-    <!-- <link rel="stylesheet" href="plugins/typeahead/jquery.typeahead.min.css" /> -->
+    <!-- SLICK -->
+    <link rel="stylesheet" href="plugins/slick/slick.css" />
+    <link rel="stylesheet" href="plugins/slick/slick-theme.css" />
 
     <!-- STYLES -->
     <link rel="stylesheet" href="css/styles.css" />
@@ -20,17 +22,18 @@
 
     <!-- MAIN -->
     <main class="wrapper">
+        <!-- INTRO -->
         <section class="intro">
-            <div class="container">
+            <div class="container gx-0">
                 <h1 class="head">Documentation</h1>
                 <div class="search open-search-modal"><i class="far fa-search"></i> Search the docs
                 </div>
                 <p class="desc">Explore our guides and examples to integrate CCAvenue</p>
             </div>
         </section>
-
+        <!-- STARTED -->
         <section class="statred">
-            <div class="container">
+            <div class="container gx-0">
                 <div class="data">
                     <div class="content">
                         <div class="desc">
@@ -95,13 +98,19 @@
                             </span>
                         </a>
                     </div>
-                    <div class="artwork">&nbsp;</div>
+                    <div class="artwork">
+                        <div class="artwork-slide">
+                            <img class="artwork-img" src="images/slide-1.png" alt="Slide 1">
+                            <img class="artwork-img" src="images/slide-1.png" alt="Slide 1">
+                            <img class="artwork-img" src="images/slide-1.png" alt="Slide 1">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
+        <!-- MODULES -->
         <section class="modules">
-            <div class="container">
+            <div class="container gx-0">
                 <div class="module">
                     <h2 class="title">Payments</h2>
                     <ul class="list">
@@ -493,6 +502,9 @@
 
     <!-- TYPEAHEAD -->
     <script src="plugins/typeahead/typeahead.bundle.js"></script>
+
+    <!-- SLICK -->
+    <script src="plugins/slick/slick.min.js"></script>
 
     <!-- SCRIPTS -->
     <script src="js/scripts.js"></script>

@@ -1,7 +1,8 @@
 <header class="header">
 
     <a href="javascript:void(0)" class="logo">
-        <img src="images/ccavenue-docs-beta-logo.png" alt="">
+        <img class="logo-img large" src="images/ccavenue-docs-beta-logo-large.png" alt="CCAvenue Docs Beta" />
+        <img class="logo-img small" src="images/ccavenue-docs-beta-logo-small.png" alt="CCAvenue Docs Beta" />
     </a>
 
     <div class="action">

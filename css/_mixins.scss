@@ -43,6 +43,7 @@
 @mixin scrollbar() {
     ::-webkit-scrollbar {
         width: var(--scroll-width);
+        height: var(--scroll-width);
     }
 
     ::-webkit-scrollbar-track {

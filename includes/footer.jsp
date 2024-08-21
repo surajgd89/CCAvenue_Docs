@@ -1,4 +1,4 @@
-<section class="highlight">
+<section class="pattern">
     <div class="left"></div>
     <div class="right"></div>
 </section>

@@ -2,9 +2,11 @@ $(document).ready(function () {
     //MODAL
     $('.open-search-modal').on('click', function () {
         $('.search-modal').show();
-        searchModalPosition();
+
+        searchModal_Position();
+
         $('body').addClass('modal-open');
-        calcFunc();
+        searchModal_Calculation();
     });
 
     $('.close-search-modal').on('click', function () {
@@ -17,6 +19,17 @@ $(document).ready(function () {
             $(event.target).hide();
             $('body').removeClass('modal-open');
         }
+    });
+
+    //SLICK
+    $('.artwork-slide').slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        speed: 300,
+        autoplay: true,
+        fade: true,
+        cssEase: 'linear',
     });
 
     //TYPEHEAD
@@ -53,40 +66,51 @@ $(document).ready(function () {
         }
     );
 
-    $('.search-control .clear').click(function () {
+    $('.search-control .clear').on('click', function () {
         $('.search-control .typeahead').typeahead('val', '');
+        $('.search-result').css('marginTop', 0);
+        searchModal_Calculation();
     });
 
     $('.search-control .typeahead').on('keyup keydown', function (e) {
-        calcFunc();
+        searchModal_Calculation();
         let ttMenu_HT = $('.tt-menu').outerHeight(true);
-        $('.search-result').css('marginTop', ttMenu_HT + 20);
-        let resultBody_HT = parseInt($('.result-body').css('maxHeight'));
-        $('.result-body').css('maxHeight', resultBody_HT - ttMenu_HT);
-    });
+        $('.search-result').css('marginTop', ttMenu_HT);
 
-    $('.search-control .typeahead').on('blur', function (e) {
-        $('.search-result').css('marginTop', 20);
+        let resultBody_HT = parseInt($('.result-body').css('maxHeight'));
+        let height = resultBody_HT - ttMenu_HT;
+        $('.result-body').css('maxHeight', height);
     });
+    
 });
 
-function searchModalPosition() {
-    let offset = $('.open-search-modal').offset();
-    let padding = parseInt($('.search-modal-body').css('padding'));
-    $('.search-modal-content').css({
-        marginTop: offset.top - padding,
-        marginLeft: offset.left - padding,
-    });
+function searchModal_Position() {
+    if ($(window).width() > 768) {
+        let search_Offset = $('.open-search-modal').offset();
+        let searchModalBody_PD = parseInt($('.search-modal-body').css('padding'));
+        $('.search-modal-content').css({
+            marginTop: search_Offset.top - searchModalBody_PD,
+            marginLeft: search_Offset.left - searchModalBody_PD,
+        });
+    }
 }
 
-function calcFunc() {
-    let searchModalBody_HT = $('.search-modal-body').outerHeight();
-    let searchModalBody_PD = parseInt($('.search-modal-body').css('padding')) * 2;
-    let searchControl_HT = $('.search-control').outerHeight();
-    let resultHead_HT = $('.result-head').outerHeight(true);
-    let recentSearch_HT = $('.recent-search').outerHeight(true);
-    let total = searchControl_HT + resultHead_HT + recentSearch_HT + searchModalBody_PD;
-    let resultBody_HT = searchModalBody_HT - total;
+function searchModal_Calculation() {
+    let searchModalContent_HT = $('.search-modal-content').outerHeight(); //700
+    let searchModalBody_PD = parseInt($('.search-modal-body').css('padding')) * 2; //54
+    let searchControl_HT = $('.search-control').outerHeight(); //48
+    let resultHead_HT = $('.result-head').outerHeight(true); //46.0938
+    let recentSearch_HT = $('.recent-search').outerHeight(true); //69.0312
+
+    let total = searchModalBody_PD + searchControl_HT + resultHead_HT + recentSearch_HT;
+
+    let resultBody_HT = searchModalContent_HT - total;
+
+    console.log(searchModalContent_HT);
+    console.log(searchModalBody_PD);
+    console.log(searchControl_HT);
+    console.log(resultHead_HT);
+    console.log(recentSearch_HT);
 
     $('.result-body').css('maxHeight', resultBody_HT);
 }
