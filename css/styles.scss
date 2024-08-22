@@ -820,6 +820,10 @@ body {
                     overflow-y: auto;
                     height: 13.5rem;
 
+                    .mCSB_inside > .mCSB_container {
+                        margin-right: 0;
+                    }
+
                     .result-list {
                         padding: 0;
                         margin: 0;

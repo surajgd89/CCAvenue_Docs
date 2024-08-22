@@ -66,6 +66,10 @@ $(function () {
         searchModal_Calc(event);
     });
 
+    $('.search-control .typeahead').bind('typeahead:open', function (event, suggestion) {
+        searchModal_Calc(event);
+    });
+
     $('.search-control .typeahead').bind('typeahead:select', function (event, suggestion) {
         searchModal_Calc(event);
     });
@@ -121,7 +125,7 @@ function searchModal_Calc(event) {
         $('.search-result').css('marginTop', 0);
     }
 
-    if (event.type === 'input') {
+    if (event.type === 'input' || event.type === 'typeahead:open') {
         let ttMenu_HT = $('.tt-menu').outerHeight(true);
         console.log(ttMenu_HT);
         $('.search-result').css('marginTop', ttMenu_HT);

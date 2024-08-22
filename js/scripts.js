@@ -16,6 +16,7 @@ $(function () {
     // MCUSTOMSCROLLBAR
     $('.result-body').mCustomScrollbar({
         axis: 'y',
-        theme: 'dark',
+        theme: 'minimal-dark',
+        autoHideScrollbar: true,
     });
 });
