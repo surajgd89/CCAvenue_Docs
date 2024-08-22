@@ -7,8 +7,8 @@
     <div class="container">
         <div class="data">Copyright
             <i class="fal fa-copyright"></i>
-            <a href="javascript:void(0)" class="link">
-                <img src="https://www.ccavenue.com/images_mcpg/ia_footer_logo.png" valign="middle"> INFIBEAM
+            <a href="https://www.ia.ooo/" target="_blank" class="link">
+                <img src="images/ia_footer_logo.png" valign="middle"> INFIBEAM
                 AVENUES.</a>
             All Rights Reserved.
         </div>

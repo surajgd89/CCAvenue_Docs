@@ -142,14 +142,14 @@
                 </div>
             </div>
 
-            <div class="recent-search">
-                <h3 class="recent-title">Recent search</h3>
-                <ul class="recent-list">
-                    <li class="recent-item">Methods</li>
-                    <li class="recent-item">Pay</li>
-                    <li class="recent-item">Payments</li>
-                    <li class="recent-item">Invoice</li>
-                    <li class="recent-item">p</li>
+            <div class="popular-search">
+                <h3 class="popular-title">Popular search</h3>
+                <ul class="popular-list">
+                    <li class="popular-item">Methods</li>
+                    <li class="popular-item">Pay</li>
+                    <li class="popular-item">Payments</li>
+                    <li class="popular-item">Invoice</li>
+                    <li class="popular-item">p</li>
                 </ul>
             </div>
         </div>

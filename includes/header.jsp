@@ -8,13 +8,15 @@
     <div class="action">
         <a href="javascript:void(0)" class="button button-primary header-btn btn-api"><i class="far fa-code"></i>API
             reference</a>
-        <a href="javascript:void(0)" class="button button-secondary header-btn">Login
+        <a href="https://dashboard.ccavenue.com/jsp/merchant/merchantLogin.jsp" target="_blank"
+            class="button button-secondary header-btn">Login
             <span class="arrow">
                 <i class="far fa-angle-right"></i>
                 <i class="far fa-dash"></i>
             </span>
         </a>
-        <a href="javascript:void(0)" class="button button-secondary header-btn">Sign Up
+        <a href=" https://dashboard.ccavenue.com/web/genregistration.do?command=navigateSchemeForm" target="_blank"
+            class="button button-secondary header-btn">Sign Up
             <span class="arrow">
                 <i class="far fa-angle-right"></i>
                 <i class="far fa-dash"></i>

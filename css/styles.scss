@@ -18,12 +18,12 @@ html {
 
 :root {
     --primary: #000;
-    --text: #000;
-    --text-light: #000;
-    --link: #000;
-    --link-hover: #000;
+    --text: #132644;
+    --text-light: #3a4c69;
+    --link: #1572e8;
+    --link-hover: #1572e8;
     --border: #000;
-    --background-one: #000;
+    --background-one: #f7fafc;
     --background-two: #000;
     --background-three: #000;
 }
@@ -81,7 +81,7 @@ body {
 
             &:last-child {
                 opacity: 0;
-                right: 2px;
+                right: 0.2rem;
             }
         }
     }
@@ -90,7 +90,7 @@ body {
         .arrow {
             i {
                 &:first-child {
-                    right: -1px;
+                    right: -0.1rem;
                 }
 
                 &:last-child {
@@ -167,8 +167,16 @@ body {
             }
         }
 
+        .header-btn {
+            @include sm {
+                &:not(.btn-api) {
+                    display: none;
+                }
+            }
+        }
+
         .btn-api {
-            margin-right: 1.6rem;
+            margin-right: 0;
 
             @include md {
                 margin-right: 0;
@@ -188,7 +196,8 @@ body {
     min-height: 26rem;
     display: flex;
     align-items: center;
-    background: linear-gradient(90deg, rgb(3, 32, 90) 0%, rgb(9, 71, 196) 50%, rgb(0, 52, 157) 100%);
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='100%' height='100%' preserveAspectRatio='none' viewBox='0 0 1920 260'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1004%26quot%3b)' fill='none'%3e%3crect width='1920' height='260' x='0' y='0' fill='rgba(0%2c 52%2c 157%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c603.32C110.047%2c582.215%2c158.597%2c453.786%2c249.745%2c388.61C334.529%2c327.984%2c466.755%2c327.592%2c514.891%2c235.143C563.053%2c142.642%2c517.527%2c29.956%2c488.665%2c-70.259C462.943%2c-159.572%2c413.148%2c-235.378%2c357.862%2c-310.09C298.138%2c-390.8%2c245.804%2c-483.359%2c153.589%2c-523.076C56.802%2c-564.762%2c-54.638%2c-560.108%2c-156.041%2c-531.425C-258.055%2c-502.569%2c-356.295%2c-448.299%2c-417.3%2c-361.593C-475.898%2c-278.309%2c-475.521%2c-170.866%2c-481.259%2c-69.195C-486.554%2c24.637%2c-474.997%2c114.787%2c-449.285%2c205.182C-419.5%2c309.895%2c-401.441%2c425.668%2c-319.962%2c497.871C-234.179%2c573.888%2c-112.567%2c624.908%2c0%2c603.32' fill='%23002776'%3e%3c/path%3e%3cpath d='M1920 625.6320000000001C1989.748 615.117 2053.725 595.246 2120.087 571.341 2206.387 540.254 2310.226 535.989 2367.581 464.404 2427.99 389.006 2452.349 280.463 2428.063 186.952 2404.325 95.55099999999999 2311.949 44.43299999999999 2242.027-19.03800000000001 2180.498-74.88999999999999 2125.293-145.286 2043.854-161.80900000000003 1964.508-177.90699999999998 1887.048-137.72199999999998 1812.478-106.18799999999999 1745.311-77.78399999999999 1692.921-30.519999999999982 1633.48 11.729000000000013 1553.219 68.77600000000001 1436.188 93.168 1402.049 185.53 1367.934 277.827 1413.804 383.742 1464.8899999999999 467.842 1512.935 546.935 1589.548 607.826 1676.984 638.1410000000001 1755.205 665.261 1838.136 637.973 1920 625.6320000000001' fill='%230041c4'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1004'%3e%3crect width='1920' height='260' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e"),
+        linear-gradient(90deg, rgb(3, 32, 90) 0%, rgb(9, 71, 196) 50%, rgb(0, 52, 157) 100%);
 
     @include md {
         padding: 3rem 2rem;
@@ -312,6 +321,7 @@ body {
                     text-decoration: none;
                     color: #1572e8;
                     font-weight: 500;
+                    cursor: auto;
                 }
             }
         }
@@ -465,7 +475,7 @@ body {
 
                         &:last-child {
                             opacity: 0;
-                            right: 2px;
+                            right: 0.2rem;
                         }
                     }
                 }
@@ -479,7 +489,7 @@ body {
                             color: #1c80ec;
 
                             &:first-child {
-                                right: -1px;
+                                right: -0.1rem;
                             }
 
                             &:last-child {
@@ -540,41 +550,7 @@ body {
         min-height: 8rem;
     }
 
-    .left {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        right: 0;
-        top: 0;
-        overflow: hidden;
-
-        &::before {
-            content: '';
-            width: 300px;
-            height: 150px;
-            background: rgba(255, 255, 255, 0.1);
-            position: absolute;
-            left: -90px;
-            top: 0;
-            border-radius: 6px;
-            transform: skew(25deg, -12deg);
-            transform-origin: top left;
-        }
-
-        &::after {
-            content: '';
-            width: 150px;
-            height: 600px;
-            background: rgba(255, 255, 255, 0.15);
-            position: absolute;
-            left: 0px;
-            top: 30px;
-            border-radius: 4px;
-            transform: skew(-25deg, 10deg);
-            transform-origin: top left;
-        }
-    }
-
+    .left,
     .right {
         position: absolute;
         height: 100%;
@@ -582,29 +558,59 @@ body {
         right: 0;
         top: 0;
         overflow: hidden;
+    }
 
+    .left {
         &::before {
             content: '';
-            width: 300px;
-            height: 150px;
+            width: 30rem;
+            height: 15rem;
             background: rgba(255, 255, 255, 0.1);
             position: absolute;
-            right: -60px;
+            left: -9rem;
             top: 0;
-            border-radius: 4px;
+            border-radius: 0.6rem;
+            transform: skew(25deg, -12deg);
+            transform-origin: top left;
+        }
+
+        &::after {
+            content: '';
+            width: 15rem;
+            height: 60rem;
+            background: rgba(255, 255, 255, 0.15);
+            position: absolute;
+            left: 0px;
+            top: 3rem;
+            border-radius: 0.4rem;
+            transform: skew(-25deg, 10deg);
+            transform-origin: top left;
+        }
+    }
+
+    .right {
+        &::before {
+            content: '';
+            width: 30rem;
+            height: 15rem;
+            background: rgba(255, 255, 255, 0.1);
+            position: absolute;
+            right: -6rem;
+            top: 0;
+            border-radius: 0.4rem;
             transform: skew(25deg, -10deg);
             transform-origin: top left;
         }
 
         &::after {
             content: '';
-            width: 150px;
-            height: 600px;
+            width: 15rem;
+            height: 60rem;
             background: rgba(255, 255, 255, 0.15);
             position: absolute;
             right: 0px;
-            top: 30px;
-            border-radius: 6px;
+            top: 3rem;
+            border-radius: 0.6rem;
             transform: skew(25deg, 10deg);
             transform-origin: top left;
         }
@@ -642,9 +648,43 @@ body {
     }
 }
 
+//LOADER
+.loader {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 1);
+    transition: all 300ms;
+
+    .spinner {
+        margin: auto;
+        width: 4.6rem;
+        height: 4.6rem;
+        border: 0.4rem solid #1572e8;
+        border-bottom-color: transparent;
+        border-radius: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}
+
 //SEARCH MODAL
 .modal-open {
     overflow: hidden;
+    padding-right: var(--scroll-width);
 }
 
 .search-modal {
@@ -696,7 +736,7 @@ body {
                         background-color: #f7fafc;
                         border-radius: 0.6rem;
                         box-shadow: 0 0 3rem 0 rgba(32, 60, 114, 0.14);
-                        top: 0.4rem;
+                        margin-top: 0.4rem;
 
                         .tt-dataset {
                             .tt-suggestion {
@@ -737,14 +777,16 @@ body {
                     padding: 0.6rem 2rem;
                     padding-right: 6rem;
                     width: 100%;
-                    border-radius: 6px;
+                    border-radius: 0.6rem;
                     border: 1px solid #cfd6e3;
                     background: #fff;
                     min-height: 4.8rem;
+                    transition: all 300ms;
 
                     &:focus {
                         outline: 0;
                         border-color: #1572e8;
+                        box-shadow: 0 0 0 3px rgba(21, 114, 232, 0.2);
                     }
                 }
 
@@ -815,8 +857,8 @@ body {
                 }
             }
 
-            .recent-search {
-                .recent-title {
+            .popular-search {
+                .popular-title {
                     font-size: 1.4rem;
                     font-weight: 600;
                     margin-bottom: 1rem;
@@ -826,13 +868,13 @@ body {
                         padding-top: 1.5rem;
                     }
                 }
-                .recent-list {
+                .popular-list {
                     margin: 0;
                     padding: 0;
                     display: flex;
                     gap: 1rem;
 
-                    .recent-item {
+                    .popular-item {
                         list-style: none;
                         padding: 0.4rem 0.8rem;
                         background: #eaeeee;
@@ -859,8 +901,9 @@ body {
 
             .close-search-modal {
                 margin-left: auto;
-                margin-right: 0.5rem;
                 margin-top: 0.5rem;
+                margin-right: 0.5rem;
+                margin-bottom: 0.5rem;
                 font-size: 1.8rem;
                 cursor: pointer;
                 display: inline-flex;

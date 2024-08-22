@@ -6,6 +6,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CCAvenue Docs (Beta)</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
     <!-- SLICK -->
     <link rel="stylesheet" href="plugins/slick/slick.css" />
@@ -491,6 +492,10 @@
         </section>
     </main>
 
+    <div class="loader">
+        <span class="spinner"></span>
+    </div>
+
     <!-- SEARCH -->
     <jsp:include page="includes/search.jsp" />
 
@@ -507,6 +512,7 @@
     <script src="plugins/slick/slick.min.js"></script>
 
     <!-- SCRIPTS -->
+    <script src="js/search.js"></script>
     <script src="js/scripts.js"></script>
 
 </body>
