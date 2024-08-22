@@ -111,7 +111,7 @@ function searchModal_Calc(event) {
     // console.log(popularSearch_HT);
     // 69.0312
 
-    $('.result-body').css('maxHeight', resultBody_HT);
+    $('.result-body').css('height', resultBody_HT);
 
     if (event.type === 'click' || event.type === 'typeahead:select') {
         $('.search-result').css('marginTop', 0);
@@ -123,12 +123,11 @@ function searchModal_Calc(event) {
 
     if (event.type === 'input') {
         let ttMenu_HT = $('.tt-menu').outerHeight(true);
-
         console.log(ttMenu_HT);
         $('.search-result').css('marginTop', ttMenu_HT);
-        let resultBody_HT = parseInt($('.result-body').css('maxHeight'));
+        let resultBody_HT = parseInt($('.result-body').css('height'));
         let height = resultBody_HT - ttMenu_HT;
-        $('.result-body').css('maxHeight', height);
+        $('.result-body').css('height', height);
 
         if ($('.search-control .typeahead').typeahead('val').length) {
             $('.search-result').show();

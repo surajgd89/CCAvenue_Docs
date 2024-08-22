@@ -13,6 +13,7 @@
                 <div class="result-head">
                     Search Results
                 </div>
+
                 <div class="result-body">
                     <ul class="result-list">
                         <li class="result-item">
@@ -140,6 +141,7 @@
                         </li>
                     </ul>
                 </div>
+
             </div>
 
             <div class="popular-search">

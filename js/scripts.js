@@ -2,7 +2,7 @@ $(function () {
     setTimeout(() => {
         $('.loader').css('display', 'none');
     }, 1500);
-    //SLICK
+    // SLICK
     $('.artwork-slide').slick({
         dots: true,
         arrows: false,
@@ -11,5 +11,11 @@ $(function () {
         autoplay: true,
         fade: true,
         cssEase: 'linear',
+    });
+
+    // MCUSTOMSCROLLBAR
+    $('.result-body').mCustomScrollbar({
+        axis: 'y',
+        theme: 'dark',
     });
 });

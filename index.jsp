@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="plugins/slick/slick.css" />
     <link rel="stylesheet" href="plugins/slick/slick-theme.css" />
 
+    <!-- MCUSTOMSCROLLBAR -->
+    <link rel="stylesheet" href="plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.css" />
+
     <!-- STYLES -->
     <link rel="stylesheet" href="css/styles.css" />
 
@@ -510,6 +513,9 @@
 
     <!-- SLICK -->
     <script src="plugins/slick/slick.min.js"></script>
+
+    <!-- MCUSTOMSCROLLBAR -->
+    <script src="plugins/mcustomscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
 
     <!-- SCRIPTS -->
     <script src="js/search.js"></script>
