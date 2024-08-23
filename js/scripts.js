@@ -17,6 +17,5 @@ $(function () {
     $('.result-body').mCustomScrollbar({
         axis: 'y',
         theme: 'minimal-dark',
-        autoHideScrollbar: true,
     });
 });

@@ -508,14 +508,21 @@
     <!-- JQUERY -->
     <script src="plugins/jquery/jquery.min.js"></script>
 
+    <!-- MCUSTOMSCROLLBAR -->
+    <script src="plugins/mcustomscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+
     <!-- TYPEAHEAD -->
     <script src="plugins/typeahead/typeahead.bundle.js"></script>
 
     <!-- SLICK -->
     <script src="plugins/slick/slick.min.js"></script>
 
-    <!-- MCUSTOMSCROLLBAR -->
-    <script src="plugins/mcustomscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+
+
+
+
+
 
     <!-- SCRIPTS -->
     <script src="js/search.js"></script>

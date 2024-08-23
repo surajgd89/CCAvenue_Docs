@@ -147,11 +147,12 @@
             <div class="popular-search">
                 <h3 class="popular-title">Popular search</h3>
                 <ul class="popular-list">
-                    <li class="popular-item">Methods</li>
-                    <li class="popular-item">Pay</li>
-                    <li class="popular-item">Payments</li>
-                    <li class="popular-item">Invoice</li>
-                    <li class="popular-item">p</li>
+                    <li class="popular-item">Payout</li>
+                    <li class="popular-item">Integration</li>
+                    <li class="popular-item">SDK</li>
+                    <li class="popular-item">Implementation</li>
+                    <li class="popular-item">Gateway</li>
+                    <li class="popular-item">Gateway</li>
                 </ul>
             </div>
         </div>
