@@ -843,7 +843,20 @@ body {
 
                             &:hover,
                             &:focus {
-                                background-color: #edf2f5;
+                                background: #edf2f5;
+                            }
+
+                            &.active {
+                                background: #edf2f5;
+                                .result-link {
+                                    .result-title {
+                                        color: #1572e8;
+                                    }
+                                    .result-breadcrumb {
+                                        color: #1572e8;
+                                        opacity: 0.7;
+                                    }
+                                }
                             }
 
                             &:last-child {

@@ -74,7 +74,7 @@ $(function () {
         searchModal_Calc(event);
     });
 
-    $('.search-control .typeahead').on('input', function (event) {
+    $('.search-control .typeahead').bind('typeahead:change', function (event) {
         searchModal_Calc(event);
     });
 });
@@ -102,19 +102,6 @@ function searchModal_Calc(event) {
 
     let resultBody_HT = searchModalContent_HT - total;
 
-    // console.log(searchModalContent_HT);
-    // 700
-    // console.log(searchModalBody_PD);
-    // 54
-    // console.log(closeAction_HT);
-    // 48
-    // console.log(searchControl_HT);
-    // 35 || 0
-    // console.log(resultHead_HT);
-    // 46.0938
-    // console.log(popularSearch_HT);
-    // 69.0312
-
     $('.result-body').css('height', resultBody_HT);
 
     if (event.type === 'click' || event.type === 'typeahead:select') {
@@ -125,13 +112,14 @@ function searchModal_Calc(event) {
         $('.search-result').css('marginTop', 0);
     }
 
-    if (event.type === 'input' || event.type === 'typeahead:open') {
+    if (event.type === 'typeahead:open' || event.type === 'typeahead:change') {
         let ttMenu_HT = $('.tt-menu').outerHeight(true);
-        console.log(ttMenu_HT);
         $('.search-result').css('marginTop', ttMenu_HT);
         let resultBody_HT = parseInt($('.result-body').css('height'));
         let height = resultBody_HT - ttMenu_HT;
         $('.result-body').css('height', height);
+
+        console.log(event);
 
         if ($('.search-control .typeahead').typeahead('val').length) {
             $('.search-result').show();

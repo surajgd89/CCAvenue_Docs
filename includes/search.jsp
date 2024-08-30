@@ -17,7 +17,7 @@
                 <div class="result-body">
                     <ul class="result-list">
                         <li class="result-item">
-                            <a href="javascript:void(0)" class="result-link">
+                            <a href="https://infibeam.keka.com/#/home/dashboard" class="result-link">
                                 <h4 class="result-title">Payment Method Error Parameters</h4>
                                 <div class="result-breadcrumb">Errors / Payment methods</div>
                             </a>
