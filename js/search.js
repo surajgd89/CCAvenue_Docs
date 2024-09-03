@@ -62,19 +62,23 @@ $(function () {
         $('.search-result').hide();
     });
 
-    $('.search-control .typeahead').bind('typeahead:close', function (event, suggestion) {
+    $('.search-control .typeahead').on('input', function (event, suggestion) {
+        // console.log(event.type);
         searchModal_Calc(event);
     });
 
-    $('.search-control .typeahead').bind('typeahead:open', function (event, suggestion) {
+    $('.search-control .typeahead').on('focus', function (event, suggestion) {
+        // console.log(event.type);
+        searchModal_Calc(event);
+    });
+
+    $('.search-control .typeahead').on('blur', function (event, suggestion) {
+        // console.log(event.type);
         searchModal_Calc(event);
     });
 
     $('.search-control .typeahead').bind('typeahead:select', function (event, suggestion) {
-        searchModal_Calc(event);
-    });
-
-    $('.search-control .typeahead').bind('typeahead:change', function (event) {
+        console.log(event.type);
         searchModal_Calc(event);
     });
 });
@@ -97,29 +101,28 @@ function searchModal_Calc(event) {
     let closeAction_HT = $('.close-action').is(':visible') ? $('.close-action').outerHeight(true) : 0;
     let resultHead_HT = $('.result-head').outerHeight(true);
     let popularSearch_HT = $('.popular-search').outerHeight(true);
-
     let total = searchModalBody_PD + searchControl_HT + closeAction_HT + resultHead_HT + popularSearch_HT;
-
     let resultBody_HT = searchModalContent_HT - total;
-
     $('.result-body').css('height', resultBody_HT);
 
-    if (event.type === 'click' || event.type === 'typeahead:select') {
+    if (event.type === 'typeahead:select') {
         $('.search-result').css('marginTop', 0);
+        $('.search-result').show();
     }
 
-    if (event.type === 'typeahead:close') {
+    if (event.type === 'blur') {
         $('.search-result').css('marginTop', 0);
+        if ($(event.relatedTarget).is('.result-link')) {
+            window.location.href = $(event.relatedTarget).attr('href');
+        }
     }
 
-    if (event.type === 'typeahead:open' || event.type === 'typeahead:change') {
+    if (event.type === 'input' || event.type === 'focus') {
         let ttMenu_HT = $('.tt-menu').outerHeight(true);
         $('.search-result').css('marginTop', ttMenu_HT);
         let resultBody_HT = parseInt($('.result-body').css('height'));
         let height = resultBody_HT - ttMenu_HT;
         $('.result-body').css('height', height);
-
-        console.log(event);
 
         if ($('.search-control .typeahead').typeahead('val').length) {
             $('.search-result').show();
