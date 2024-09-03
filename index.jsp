@@ -21,6 +21,9 @@
 </head>
 
 <body>
+
+    <jsp:include page="includes/svg-assets.jsp" />
+
     <!-- HEADER -->
     <jsp:include page="includes/header.jsp" />
 
@@ -104,9 +107,9 @@
                     </div>
                     <div class="artwork">
                         <div class="artwork-slide">
-                            <img class="artwork-img" src="images/slide-1.png" alt="Slide 1">
-                            <img class="artwork-img" src="images/slide-1.png" alt="Slide 1">
-                            <img class="artwork-img" src="images/slide-1.png" alt="Slide 1">
+                            <jsp:include page="includes/artwork-art/artwork-1.jsp" />
+                            <jsp:include page="includes/artwork-art/artwork-1.jsp" />
+                            <jsp:include page="includes/artwork-art/artwork-1.jsp" />
                         </div>
                     </div>
                 </div>

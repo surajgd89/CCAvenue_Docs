@@ -2,8 +2,13 @@
 
 
     <a href="javascript:void(0)" class="logo">
-        <img class="logo-img large" src="images/ccavenue-docs-beta-logo-large.png" alt="CCAvenue Docs Beta" />
-        <img class="logo-img small" src="images/ccavenue-docs-beta-logo-small.png" alt="CCAvenue Docs Beta" />
+
+        <svg class="logo-svg" viewBox="0 0 287.39 47.95">
+            <use xlink:href="#cc-logo-black"></use>
+        </svg>
+
+        <!-- <img class="logo-img large" src="images/ccavenue-docs-beta-logo-large.png" alt="CCAvenue Docs Beta" />
+        <img class="logo-img small" src="images/ccavenue-docs-beta-logo-small.png" alt="CCAvenue Docs Beta" /> -->
     </a>
 
     <div class="action">
