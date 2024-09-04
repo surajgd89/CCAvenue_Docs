@@ -3,8 +3,16 @@
 
     <a href="javascript:void(0)" class="logo">
 
-        <svg class="logo-svg" viewBox="0 0 287.39 47.95">
+        <!-- <svg class="logo-svg" viewBox="0 0 287.39 47.95">
             <use xlink:href="#cc-logo-black"></use>
+        </svg> -->
+
+        <!-- <svg class="logo-svg" viewBox="0 0 528.1 62.2">
+            <use xlink:href="#cc-logo-docs"></use>
+        </svg> -->
+
+        <svg class="logo-svg" viewBox="0 0 631.3 76">
+            <use xlink:href="#cc-logo-docs-beta"></use>
         </svg>
 
         <!-- <img class="logo-img large" src="images/ccavenue-docs-beta-logo-large.png" alt="CCAvenue Docs Beta" />
