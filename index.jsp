@@ -15,13 +15,16 @@
     <!-- MCUSTOMSCROLLBAR -->
     <link rel="stylesheet" href="plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.css" />
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="plugins/aos-master/aos.css" />
+
     <!-- STYLES -->
     <link rel="stylesheet" href="css/styles.css" />
 
 </head>
 
 <body>
-
+    <!-- SVG ASSETS -->
     <jsp:include page="includes/svg-assets.jsp" />
 
     <!-- HEADER -->
@@ -29,6 +32,7 @@
 
     <!-- MAIN -->
     <main class="wrapper">
+
         <!-- INTRO -->
         <section class="intro">
             <div class="container gx-0">
@@ -38,6 +42,7 @@
                 <p class="desc">Explore our guides and examples to integrate CCAvenue</p>
             </div>
         </section>
+
         <!-- STARTED -->
         <section class="statred">
             <div class="container gx-0">
@@ -98,7 +103,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <a href="javascript:void(0)" class="button button-primary btn-started">Get Started
+                        <a href="documentation.jsp" class="button button-primary btn-started">Get Started
                             <span class="arrow">
                                 <i class="far fa-angle-right"></i>
                                 <i class="far fa-dash"></i>
@@ -115,16 +120,20 @@
                 </div>
             </div>
         </section>
+
         <!-- MODULES -->
         <section class="modules">
             <div class="container gx-0">
-                <div class="module">
+
+                <div class="module" data-aos="fade-up">
                     <h2 class="title">Payments</h2>
                     <ul class="list">
                         <li class="list-item">
                             <a href="javascript:void(0)" class="list-link">
                                 <div class="ico">
-                                    <img src="images/icon.png" alt="" />
+                                    <svg class="ico-svg" viewBox="0 0 512 512">
+                                        <use xlink:href="#ico-shield"></use>
+                                    </svg>
                                 </div>
                                 <div class="data">
                                     <h3 class="name">
@@ -142,7 +151,9 @@
                         <li class="list-item">
                             <a href="javascript:void(0)" class="list-link">
                                 <div class="ico">
-                                    <img src="images/icon.png" alt="" />
+                                    <svg class="ico-svg" viewBox="0 0 512 512">
+                                        <use xlink:href="#ico-shield"></use>
+                                    </svg>
                                 </div>
                                 <div class="data">
                                     <h3 class="name">
@@ -160,7 +171,9 @@
                         <li class="list-item">
                             <a href="javascript:void(0)" class="list-link">
                                 <div class="ico">
-                                    <img src="images/icon.png" alt="" />
+                                    <svg class="ico-svg" viewBox="0 0 512 512">
+                                        <use xlink:href="#ico-shield"></use>
+                                    </svg>
                                 </div>
                                 <div class="data">
                                     <h3 class="name">
@@ -178,7 +191,9 @@
                         <li class="list-item">
                             <a href="javascript:void(0)" class="list-link">
                                 <div class="ico">
-                                    <img src="images/icon.png" alt="" />
+                                    <svg class="ico-svg" viewBox="0 0 512 512">
+                                        <use xlink:href="#ico-shield"></use>
+                                    </svg>
                                 </div>
                                 <div class="data">
                                     <h3 class="name">
@@ -196,7 +211,9 @@
                         <li class="list-item">
                             <a href="javascript:void(0)" class="list-link">
                                 <div class="ico">
-                                    <img src="images/icon.png" alt="" />
+                                    <svg class="ico-svg" viewBox="0 0 512 512">
+                                        <use xlink:href="#ico-shield"></use>
+                                    </svg>
                                 </div>
                                 <div class="data">
                                     <h3 class="name">
@@ -215,7 +232,9 @@
                         <li class="list-item">
                             <a href="javascript:void(0)" class="list-link">
                                 <div class="ico">
-                                    <img src="images/icon.png" alt="" />
+                                    <svg class="ico-svg" viewBox="0 0 512 512">
+                                        <use xlink:href="#ico-shield"></use>
+                                    </svg>
                                 </div>
                                 <div class="data">
                                     <h3 class="name">
@@ -233,7 +252,9 @@
                         <li class="list-item">
                             <a href="javascript:void(0)" class="list-link">
                                 <div class="ico">
-                                    <img src="images/icon.png" alt="" />
+                                    <svg class="ico-svg" viewBox="0 0 512 512">
+                                        <use xlink:href="#ico-shield"></use>
+                                    </svg>
                                 </div>
                                 <div class="data">
                                     <h3 class="name">
@@ -251,7 +272,9 @@
                         <li class="list-item">
                             <a href="javascript:void(0)" class="list-link">
                                 <div class="ico">
-                                    <img src="images/icon.png" alt="" />
+                                    <svg class="ico-svg" viewBox="0 0 512 512">
+                                        <use xlink:href="#ico-shield"></use>
+                                    </svg>
                                 </div>
                                 <div class="data">
                                     <h3 class="name">
@@ -270,7 +293,9 @@
                         <li class="list-item">
                             <a href="javascript:void(0)" class="list-link">
                                 <div class="ico">
-                                    <img src="images/icon.png" alt="" />
+                                    <svg class="ico-svg" viewBox="0 0 512 512">
+                                        <use xlink:href="#ico-shield"></use>
+                                    </svg>
                                 </div>
                                 <div class="data">
                                     <h3 class="name">
@@ -288,7 +313,9 @@
                         <li class="list-item">
                             <a href="javascript:void(0)" class="list-link">
                                 <div class="ico">
-                                    <img src="images/icon.png" alt="" />
+                                    <svg class="ico-svg" viewBox="0 0 512 512">
+                                        <use xlink:href="#ico-shield"></use>
+                                    </svg>
                                 </div>
                                 <div class="data">
                                     <h3 class="name">
@@ -305,13 +332,15 @@
                     </ul>
                 </div>
 
-                <div class="module">
+                <div class="module" data-aos="fade-up">
                     <h2 class="title">Settlements</h2>
                     <ul class="list">
                         <li class="list-item">
                             <a href="javascript:void(0)" class="list-link">
                                 <div class="ico">
-                                    <img src="images/icon.png" alt="" />
+                                    <svg class="ico-svg" viewBox="0 0 512 512">
+                                        <use xlink:href="#ico-shield"></use>
+                                    </svg>
                                 </div>
                                 <div class="data">
                                     <h3 class="name">
@@ -328,7 +357,9 @@
                         <li class="list-item">
                             <a href="javascript:void(0)" class="list-link">
                                 <div class="ico">
-                                    <img src="images/icon.png" alt="" />
+                                    <svg class="ico-svg" viewBox="0 0 512 512">
+                                        <use xlink:href="#ico-shield"></use>
+                                    </svg>
                                 </div>
                                 <div class="data">
                                     <h3 class="name">
@@ -344,13 +375,15 @@
                     </ul>
                 </div>
 
-                <div class="module">
+                <div class="module" data-aos="fade-up">
                     <h2 class="title">Web Integration</h2>
                     <ul class="list">
                         <li class="list-item">
                             <a href="javascript:void(0)" class="list-link">
                                 <div class="ico">
-                                    <img src="images/icon.png" alt="" />
+                                    <svg class="ico-svg" viewBox="0 0 512 512">
+                                        <use xlink:href="#ico-shield"></use>
+                                    </svg>
                                 </div>
                                 <div class="data">
                                     <h3 class="name">
@@ -367,7 +400,9 @@
                         <li class="list-item">
                             <a href="javascript:void(0)" class="list-link">
                                 <div class="ico">
-                                    <img src="images/icon.png" alt="" />
+                                    <svg class="ico-svg" viewBox="0 0 512 512">
+                                        <use xlink:href="#ico-shield"></use>
+                                    </svg>
                                 </div>
                                 <div class="data">
                                     <h3 class="name">
@@ -384,7 +419,9 @@
                         <li class="list-item">
                             <a href="javascript:void(0)" class="list-link">
                                 <div class="ico">
-                                    <img src="images/icon.png" alt="" />
+                                    <svg class="ico-svg" viewBox="0 0 512 512">
+                                        <use xlink:href="#ico-shield"></use>
+                                    </svg>
                                 </div>
                                 <div class="data">
                                     <h3 class="name">
@@ -400,13 +437,15 @@
                     </ul>
                 </div>
 
-                <div class="module">
+                <div class="module" data-aos="fade-up">
                     <h2 class="title">Mobile Integration</h2>
                     <ul class="list">
                         <li class="list-item">
                             <a href="javascript:void(0)" class="list-link">
                                 <div class="ico">
-                                    <img src="images/icon.png" alt="" />
+                                    <svg class="ico-svg" viewBox="0 0 512 512">
+                                        <use xlink:href="#ico-shield"></use>
+                                    </svg>
                                 </div>
                                 <div class="data">
                                     <h3 class="name">
@@ -423,7 +462,9 @@
                         <li class="list-item">
                             <a href="javascript:void(0)" class="list-link">
                                 <div class="ico">
-                                    <img src="images/icon.png" alt="" />
+                                    <svg class="ico-svg" viewBox="0 0 512 512">
+                                        <use xlink:href="#ico-shield"></use>
+                                    </svg>
                                 </div>
                                 <div class="data">
                                     <h3 class="name">
@@ -440,7 +481,9 @@
                         <li class="list-item">
                             <a href="javascript:void(0)" class="list-link">
                                 <div class="ico">
-                                    <img src="images/icon.png" alt="" />
+                                    <svg class="ico-svg" viewBox="0 0 512 512">
+                                        <use xlink:href="#ico-shield"></use>
+                                    </svg>
                                 </div>
                                 <div class="data">
                                     <h3 class="name">
@@ -456,13 +499,15 @@
                     </ul>
                 </div>
 
-                <div class="module">
+                <div class="module" data-aos="fade-up">
                     <h2 class="title">Shopping Cart</h2>
                     <ul class="list">
                         <li class="list-item">
                             <a href="javascript:void(0)" class="list-link">
                                 <div class="ico">
-                                    <img src="images/icon.png" alt="" />
+                                    <svg class="ico-svg" viewBox="0 0 512 512">
+                                        <use xlink:href="#ico-shield"></use>
+                                    </svg>
                                 </div>
                                 <div class="data">
                                     <h3 class="name">
@@ -479,7 +524,9 @@
                         <li class="list-item">
                             <a href="javascript:void(0)" class="list-link">
                                 <div class="ico">
-                                    <img src="images/icon.png" alt="" />
+                                    <svg class="ico-svg" viewBox="0 0 512 512">
+                                        <use xlink:href="#ico-shield"></use>
+                                    </svg>
                                 </div>
                                 <div class="data">
                                     <h3 class="name">
@@ -494,19 +541,20 @@
                         </li>
                     </ul>
                 </div>
+
             </div>
         </section>
+
     </main>
 
-    <div class="loader">
-        <span class="spinner"></span>
-    </div>
+    <!-- FOOTER -->
+    <jsp:include page="includes/footer.jsp" />
 
     <!-- SEARCH -->
     <jsp:include page="includes/search.jsp" />
 
-    <!-- FOOTER -->
-    <jsp:include page="includes/footer.jsp" />
+    <!-- LOADER -->
+    <jsp:include page="includes/loader.jsp" />
 
     <!-- JQUERY -->
     <script src="plugins/jquery/jquery.min.js"></script>
@@ -520,12 +568,8 @@
     <!-- SLICK -->
     <script src="plugins/slick/slick.min.js"></script>
 
-
-
-
-
-
-
+    <!-- AOS -->
+    <script src="plugins/aos-master/aos.js"></script>
 
     <!-- SCRIPTS -->
     <script src="js/search.js"></script>

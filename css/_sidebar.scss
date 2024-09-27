@@ -1,0 +1,129 @@
+// .sidebar {
+//     position: fixed;
+//     top: 33rem;
+//     border-right: 1px solid rgb(193, 193, 193, 0.15);
+//     height: calc(100vh - 33rem);
+//     left: 0;
+//     display: block;
+//     width: 30rem;
+//     background: #fafaff;
+//     overflow-y: scroll;
+//     padding: 2rem;
+//     z-index: 1;
+
+//     ul {
+//         padding: 0;
+//         margin: 0;
+//     }
+
+//     li {
+//         list-style: none;
+//     }
+
+//     .submenu {
+//         .submenu {
+//             ul {
+//                 display: none;
+//                 li {
+//                     list-style: disc;
+//                 }
+//             }
+//         }
+//     }
+
+//     ul {
+//         li {
+//             padding-bottom: 1rem;
+
+//             a {
+//                 color: #000;
+//                 text-decoration: none;
+//                 display: flex;
+//                 align-items: center;
+//                 column-gap: 1rem;
+//                 text-transform: uppercase;
+//                 font-size: 1.4rem;
+//                 font-weight: 500;
+//             }
+
+//             ul {
+//                 padding-left: 2rem;
+//                 position: relative;
+//                 padding-top: 1rem;
+
+//                 &::before {
+//                     content: "";
+//                     position: absolute;
+//                     top: 0;
+//                     left: 0.6rem;
+//                     width: 0;
+//                     height: 100%;
+//                 }
+
+//                 li {
+//                     a {
+//                         font-size: 1.4rem;
+//                         font-weight: 400;
+//                         text-transform: initial;
+//                     }
+
+//                     &.active {
+//                         a {
+//                             color: #1572e8;
+//                         }
+//                     }
+//                 }
+//             }
+
+//             &.submenu {
+//                 &.open {
+//                     > a {
+//                         font-weight: 600;
+//                         i {
+//                             transform: rotate(90deg);
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+.sidebar {
+    position: fixed;
+    top: 33rem;
+    border-right: 1px solid rgb(193, 193, 193, 0.15);
+    height: calc(100vh - 33rem);
+    left: 0;
+    display: block;
+    width: 30rem;
+    background: #fafaff;
+    overflow-y: scroll;
+    padding: 2rem;
+    z-index: 1;
+}
+
+.menu,
+.submenu {
+    padding: 0;
+    margin: 0;
+}
+
+.main li {
+    margin-bottom: 1rem;
+}
+
+.main li a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu.parent {
+}
+
+.submenu.child {
+}
+
+.submenu.subchild {
+}
