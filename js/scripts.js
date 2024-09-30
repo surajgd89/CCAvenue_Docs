@@ -29,15 +29,16 @@ $(function () {
     // });
 
     //SIDEBAR
-    $(".child li a").click(function (e) {
+    $(".child > li > a").click(function (e) {
         e.preventDefault();
-        $(this).next("ul").slideToggle(300);
-        $(this).parent().toggleClass("open");
-    });
-
-    $("li a").click(function () {
-        $("li").removeClass("active");
-        $(this).parent().addClass("active");
+        if ($(this).next("ul").length) {
+            $(".child > li > ul").slideUp(300);
+            $(this).next("ul").slideDown(300);
+            $(this).parent().toggleClass("open");
+        } else {
+            $("li").removeClass("active");
+            $(this).parent().toggleClass("active");
+        }
     });
 
     // AOS REFRESH
