@@ -31,13 +31,11 @@ $(function () {
     //SIDEBAR
     $(".child > li > a").click(function (e) {
         e.preventDefault();
-        if ($(this).next("ul").length) {
+        if (!$(this).next("ul").is(":visible")) {
             $(".child > li > ul").slideUp(300);
             $(this).next("ul").slideDown(300);
-            $(this).parent().toggleClass("open");
-        } else {
-            $("li").removeClass("active");
-            $(this).parent().toggleClass("active");
+            $(".child > li").removeClass("open");
+            $(this).parent().addClass("open");
         }
     });
 
