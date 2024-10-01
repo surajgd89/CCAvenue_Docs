@@ -40,6 +40,8 @@
                     <p class="desc">Explore our guides and examples to integrate CCAvenue</p>
                 </div>
             </section>
+
+            <section>ABCD</section>
         </main>
 
         <!-- LOADER -->

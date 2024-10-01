@@ -23,19 +23,50 @@ $(function () {
         theme: "minimal-dark",
     });
 
-    // $('.sidebar').mCustomScrollbar({
-    //     axis: 'y',
-    //     theme: 'minimal-dark',
-    // });
-
     //SIDEBAR
     $(".child > li > a").click(function (e) {
-        e.preventDefault();
-        if (!$(this).next("ul").is(":visible")) {
-            $(".child > li > ul").slideUp(300);
-            $(this).next("ul").slideDown(300);
+        if ($(this).next(".subchild").length) {
             $(".child > li").removeClass("open");
-            $(this).parent().addClass("open");
+            $(this).parent("li").addClass("open");
+
+            if ($(this).next(".subchild").is(":visible")) {
+                $(this).next(".subchild").slideUp();
+                $(this).parent("li").removeClass("open");
+            } else {
+                $(".subchild").slideUp();
+                $(this).next(".subchild").slideDown();
+            }
+
+            $(".innerchild").slideUp();
+            $(".innerchild").parent("li").removeClass("open");
+        }
+    });
+
+    $(".subchild > li > a").click(function (e) {
+        if ($(this).next(".innerchild").length) {
+            $(".subchild > li").removeClass("open");
+            $(this).parent("li").addClass("open");
+
+            if ($(this).next(".innerchild").is(":visible")) {
+                $(this).next(".innerchild").slideUp();
+                $(this).parent("li").removeClass("open");
+            } else {
+                $(".innerchild").slideUp();
+                $(this).next(".innerchild").slideDown();
+            }
+        }
+    });
+
+    $("li a").click(function (e) {
+        if ($(this).next(".child").length || $(this).next(".subchild").length || $(this).next(".innerchild").length) {
+        } else {
+            $("li").removeClass("active");
+            $(this).parent("li").addClass("active");
+
+            if (!$(this).parents("ul").hasClass("innerchild")) {
+                $(this).parent("li").siblings().removeClass("open");
+                $(this).parents(".subchild").find(".innerchild").slideUp();
+            }
         }
     });
 
