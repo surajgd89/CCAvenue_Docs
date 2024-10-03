@@ -85,10 +85,18 @@ $(function () {
     }
 
     let otherBtns = $(".header-btn").clone(true);
+
     $(".other-links").on("click", function () {
         $(this).toggleClass("active");
         $(".other-links-data").empty();
         $(otherBtns).appendTo($(".other-links-data"));
+    });
+
+    $(document).on("click", function (e) {
+        var otherLinks = $(".other-links");
+        if (!otherLinks.is(e.target) && otherLinks.has(e.target).length === 0) {
+            otherLinks.removeClass("active");
+        }
     });
 
     // AOS REFRESH FOR ANIMATION
