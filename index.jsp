@@ -18,8 +18,6 @@
 
         <!-- STYLES -->
         <link rel="stylesheet" href="css/styles.css" />
-
-       
     </head>
 
     <body>
@@ -116,7 +114,7 @@
             <section class="modules">
                 <div class="container gx-0">
                     <div class="module" data-aos="fade-up">
-                        <h2 class="title">Payments</h2>
+                        <h2 class="title">Online Payments</h2>
                         <ul class="list">
                             <li class="list-item">
                                 <a href="javascript:void(0)" class="list-link">
@@ -127,13 +125,13 @@
                                     </div>
                                     <div class="data">
                                         <h3 class="name">
-                                            Payment Gateway
+                                            Invoice
                                             <span class="arrow">
                                                 <i class="far fa-angle-right"></i>
                                                 <i class="far fa-dash"></i>
                                             </span>
                                         </h3>
-                                        <p class="desc">Accept payments on your website or app</p>
+                                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, iste.</p>
                                     </div>
                                 </a>
                             </li>
@@ -153,7 +151,7 @@
                                                 <i class="far fa-dash"></i>
                                             </span>
                                         </h3>
-                                        <p class="desc">Create & share link via email, SMS or Whatsapp to collect money</p>
+                                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, iste.</p>
                                     </div>
                                 </a>
                             </li>
@@ -167,113 +165,13 @@
                                     </div>
                                     <div class="data">
                                         <h3 class="name">
-                                            QRPay
+                                            Shopping Cart
                                             <span class="arrow">
                                                 <i class="far fa-angle-right"></i>
                                                 <i class="far fa-dash"></i>
                                             </span>
                                         </h3>
-                                        <p class="desc">Collect QR code payments using UPI QR or Bharat QR</p>
-                                    </div>
-                                </a>
-                            </li>
-
-                            <li class="list-item">
-                                <a href="javascript:void(0)" class="list-link">
-                                    <div class="ico">
-                                        <svg class="ico-svg" viewBox="0 0 512 512">
-                                            <use xlink:href="#ico-shield"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="data">
-                                        <h3 class="name">
-                                            TapPay
-                                            <span class="arrow">
-                                                <i class="far fa-angle-right"></i>
-                                                <i class="far fa-dash"></i>
-                                            </span>
-                                        </h3>
-                                        <p class="desc">Collect payments with just a tap on your NFC Android smartphone</p>
-                                    </div>
-                                </a>
-                            </li>
-
-                            <li class="list-item">
-                                <a href="javascript:void(0)" class="list-link">
-                                    <div class="ico">
-                                        <svg class="ico-svg" viewBox="0 0 512 512">
-                                            <use xlink:href="#ico-shield"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="data">
-                                        <h3 class="name">
-                                            IVRPay
-                                            <span class="arrow">
-                                                <i class="far fa-angle-right"></i>
-                                                <i class="far fa-dash"></i>
-                                            </span>
-                                        </h3>
-                                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laboriosam!</p>
-                                    </div>
-                                </a>
-                            </li>
-
-                            <li class="list-item">
-                                <a href="javascript:void(0)" class="list-link">
-                                    <div class="ico">
-                                        <svg class="ico-svg" viewBox="0 0 512 512">
-                                            <use xlink:href="#ico-shield"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="data">
-                                        <h3 class="name">
-                                            Invoices
-                                            <span class="arrow">
-                                                <i class="far fa-angle-right"></i>
-                                                <i class="far fa-dash"></i>
-                                            </span>
-                                        </h3>
-                                        <p class="desc">Create and send itemised invoices to collect online payments</p>
-                                    </div>
-                                </a>
-                            </li>
-
-                            <li class="list-item">
-                                <a href="javascript:void(0)" class="list-link">
-                                    <div class="ico">
-                                        <svg class="ico-svg" viewBox="0 0 512 512">
-                                            <use xlink:href="#ico-shield"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="data">
-                                        <h3 class="name">
-                                            FormPay
-                                            <span class="arrow">
-                                                <i class="far fa-angle-right"></i>
-                                                <i class="far fa-dash"></i>
-                                            </span>
-                                        </h3>
-                                        <p class="desc">Collect payments with custom branded Payment form</p>
-                                    </div>
-                                </a>
-                            </li>
-
-                            <li class="list-item">
-                                <a href="javascript:void(0)" class="list-link">
-                                    <div class="ico">
-                                        <svg class="ico-svg" viewBox="0 0 512 512">
-                                            <use xlink:href="#ico-shield"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="data">
-                                        <h3 class="name">
-                                            Payment Button
-                                            <span class="arrow">
-                                                <i class="far fa-angle-right"></i>
-                                                <i class="far fa-dash"></i>
-                                            </span>
-                                        </h3>
-                                        <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, ipsa.</p>
+                                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, iste.</p>
                                     </div>
                                 </a>
                             </li>
@@ -293,7 +191,32 @@
                                                 <i class="far fa-dash"></i>
                                             </span>
                                         </h3>
-                                        <p class="desc">Collect recurring subscription payments</p>
+                                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, iste.</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="module" data-aos="fade-up">
+                        <h2 class="title">Offline Payment</h2>
+                        <ul class="list">
+                            <li class="list-item">
+                                <a href="javascript:void(0)" class="list-link">
+                                    <div class="ico">
+                                        <svg class="ico-svg" viewBox="0 0 512 512">
+                                            <use xlink:href="#ico-shield"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="data">
+                                        <h3 class="name">
+                                            TayPay
+                                            <span class="arrow">
+                                                <i class="far fa-angle-right"></i>
+                                                <i class="far fa-dash"></i>
+                                            </span>
+                                        </h3>
+                                         <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, iste.</p>
                                     </div>
                                 </a>
                             </li>
@@ -307,13 +230,193 @@
                                     </div>
                                     <div class="data">
                                         <h3 class="name">
-                                            Marketing Tools
+                                            QRPay
                                             <span class="arrow">
                                                 <i class="far fa-angle-right"></i>
                                                 <i class="far fa-dash"></i>
                                             </span>
                                         </h3>
-                                        <p class="desc">Offer discounts & run promotions across payment modes</p>
+                                         <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, iste.</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="list-item">
+                                <a href="javascript:void(0)" class="list-link">
+                                    <div class="ico">
+                                        <svg class="ico-svg" viewBox="0 0 512 512">
+                                            <use xlink:href="#ico-shield"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="data">
+                                        <h3 class="name">
+                                            POS and SoundBox Or POS Suite
+                                            <span class="arrow">
+                                                <i class="far fa-angle-right"></i>
+                                                <i class="far fa-dash"></i>
+                                            </span>
+                                        </h3>
+                                         <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, iste.</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="module" data-aos="fade-up">
+                        <h2 class="title">Marketing Tools</h2>
+                        <ul class="list">
+                            <li class="list-item">
+                                <a href="javascript:void(0)" class="list-link">
+                                    <div class="ico">
+                                        <svg class="ico-svg" viewBox="0 0 512 512">
+                                            <use xlink:href="#ico-shield"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="data">
+                                        <h3 class="name">
+                                            Discount
+                                            <span class="arrow">
+                                                <i class="far fa-angle-right"></i>
+                                                <i class="far fa-dash"></i>
+                                            </span>
+                                        </h3>
+                                         <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, iste.</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="list-item">
+                                <a href="javascript:void(0)" class="list-link">
+                                    <div class="ico">
+                                        <svg class="ico-svg" viewBox="0 0 512 512">
+                                            <use xlink:href="#ico-shield"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="data">
+                                        <h3 class="name">
+                                            Promotions
+                                            <span class="arrow">
+                                                <i class="far fa-angle-right"></i>
+                                                <i class="far fa-dash"></i>
+                                            </span>
+                                        </h3>
+                                         <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, iste.</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="module" data-aos="fade-up">
+                        <h2 class="title">Storefront</h2>
+
+                        <ul class="list">
+                            <li class="list-item">
+                                <a href="javascript:void(0)" class="list-link">
+                                    <div class="ico">
+                                        <svg class="ico-svg" viewBox="0 0 512 512">
+                                            <use xlink:href="#ico-shield"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="data">
+                                        <h3 class="name">
+                                            Store Settings
+                                            <span class="arrow">
+                                                <i class="far fa-angle-right"></i>
+                                                <i class="far fa-dash"></i>
+                                            </span>
+                                        </h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="javascript:void(0)" class="list-link">
+                                    <div class="ico">
+                                        <svg class="ico-svg" viewBox="0 0 512 512">
+                                            <use xlink:href="#ico-shield"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="data">
+                                        <h3 class="name">
+                                            Theme Settings
+                                            <span class="arrow">
+                                                <i class="far fa-angle-right"></i>
+                                                <i class="far fa-dash"></i>
+                                            </span>
+                                        </h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="javascript:void(0)" class="list-link">
+                                    <div class="ico">
+                                        <svg class="ico-svg" viewBox="0 0 512 512">
+                                            <use xlink:href="#ico-shield"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="data">
+                                        <h3 class="name">
+                                            Manage Themes
+                                            <span class="arrow">
+                                                <i class="far fa-angle-right"></i>
+                                                <i class="far fa-dash"></i>
+                                            </span>
+                                        </h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="javascript:void(0)" class="list-link">
+                                    <div class="ico">
+                                        <svg class="ico-svg" viewBox="0 0 512 512">
+                                            <use xlink:href="#ico-shield"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="data">
+                                        <h3 class="name">
+                                            Product Categories
+                                            <span class="arrow">
+                                                <i class="far fa-angle-right"></i>
+                                                <i class="far fa-dash"></i>
+                                            </span>
+                                        </h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="javascript:void(0)" class="list-link">
+                                    <div class="ico">
+                                        <svg class="ico-svg" viewBox="0 0 512 512">
+                                            <use xlink:href="#ico-shield"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="data">
+                                        <h3 class="name">
+                                            Pages
+                                            <span class="arrow">
+                                                <i class="far fa-angle-right"></i>
+                                                <i class="far fa-dash"></i>
+                                            </span>
+                                        </h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="javascript:void(0)" class="list-link">
+                                    <div class="ico">
+                                        <svg class="ico-svg" viewBox="0 0 512 512">
+                                            <use xlink:href="#ico-shield"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="data">
+                                        <h3 class="name">
+                                            Links
+                                            <span class="arrow">
+                                                <i class="far fa-angle-right"></i>
+                                                <i class="far fa-dash"></i>
+                                            </span>
+                                        </h3>
                                     </div>
                                 </a>
                             </li>
@@ -360,30 +463,6 @@
                                     </div>
                                 </a>
                             </li>
-                        </ul>
-                    </div>
-
-                    <div class="module" data-aos="fade-up">
-                        <h2 class="title">Web Integration</h2>
-                        <ul class="list">
-                            <li class="list-item">
-                                <a href="javascript:void(0)" class="list-link">
-                                    <div class="ico">
-                                        <svg class="ico-svg" viewBox="0 0 512 512">
-                                            <use xlink:href="#ico-shield"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="data">
-                                        <h3 class="name">
-                                            Seamless Integration
-                                            <span class="arrow">
-                                                <i class="far fa-angle-right"></i>
-                                                <i class="far fa-dash"></i>
-                                            </span>
-                                        </h3>
-                                    </div>
-                                </a>
-                            </li>
 
                             <li class="list-item">
                                 <a href="javascript:void(0)" class="list-link">
@@ -394,26 +473,7 @@
                                     </div>
                                     <div class="data">
                                         <h3 class="name">
-                                            Non-Seamless Integration
-                                            <span class="arrow">
-                                                <i class="far fa-angle-right"></i>
-                                                <i class="far fa-dash"></i>
-                                            </span>
-                                        </h3>
-                                    </div>
-                                </a>
-                            </li>
-
-                            <li class="list-item">
-                                <a href="javascript:void(0)" class="list-link">
-                                    <div class="ico">
-                                        <svg class="ico-svg" viewBox="0 0 512 512">
-                                            <use xlink:href="#ico-shield"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="data">
-                                        <h3 class="name">
-                                            Additional Integration
+                                            Express Settlement
                                             <span class="arrow">
                                                 <i class="far fa-angle-right"></i>
                                                 <i class="far fa-dash"></i>
@@ -426,7 +486,7 @@
                     </div>
 
                     <div class="module" data-aos="fade-up">
-                        <h2 class="title">Mobile Integration</h2>
+                        <h2 class="title">Integretions</h2>
                         <ul class="list">
                             <li class="list-item">
                                 <a href="javascript:void(0)" class="list-link">
@@ -437,7 +497,7 @@
                                     </div>
                                     <div class="data">
                                         <h3 class="name">
-                                            Server Side Implementation
+                                            Merchant Integration
                                             <span class="arrow">
                                                 <i class="far fa-angle-right"></i>
                                                 <i class="far fa-dash"></i>
@@ -456,69 +516,7 @@
                                     </div>
                                     <div class="data">
                                         <h3 class="name">
-                                            iOS SDK
-                                            <span class="arrow">
-                                                <i class="far fa-angle-right"></i>
-                                                <i class="far fa-dash"></i>
-                                            </span>
-                                        </h3>
-                                    </div>
-                                </a>
-                            </li>
-
-                            <li class="list-item">
-                                <a href="javascript:void(0)" class="list-link">
-                                    <div class="ico">
-                                        <svg class="ico-svg" viewBox="0 0 512 512">
-                                            <use xlink:href="#ico-shield"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="data">
-                                        <h3 class="name">
-                                            Android SDK
-                                            <span class="arrow">
-                                                <i class="far fa-angle-right"></i>
-                                                <i class="far fa-dash"></i>
-                                            </span>
-                                        </h3>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="module" data-aos="fade-up">
-                        <h2 class="title">Shopping Cart</h2>
-                        <ul class="list">
-                            <li class="list-item">
-                                <a href="javascript:void(0)" class="list-link">
-                                    <div class="ico">
-                                        <svg class="ico-svg" viewBox="0 0 512 512">
-                                            <use xlink:href="#ico-shield"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="data">
-                                        <h3 class="name">
-                                            Single Payout
-                                            <span class="arrow">
-                                                <i class="far fa-angle-right"></i>
-                                                <i class="far fa-dash"></i>
-                                            </span>
-                                        </h3>
-                                    </div>
-                                </a>
-                            </li>
-
-                            <li class="list-item">
-                                <a href="javascript:void(0)" class="list-link">
-                                    <div class="ico">
-                                        <svg class="ico-svg" viewBox="0 0 512 512">
-                                            <use xlink:href="#ico-shield"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="data">
-                                        <h3 class="name">
-                                            Split Payout
+                                            Native SDK Integration
                                             <span class="arrow">
                                                 <i class="far fa-angle-right"></i>
                                                 <i class="far fa-dash"></i>

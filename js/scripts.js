@@ -70,6 +70,27 @@ $(function () {
         }
     });
 
-    // AOS REFRESH
+    $(".toggle-btn").on("click", function () {
+        $(".overlay-sidebar").addClass("active");
+        $(".sidebar").addClass("active");
+    });
+
+    $(".close-sidebar, .overlay-sidebar").on("click", function () {
+        $(".overlay-sidebar").removeClass("active");
+        $(".sidebar").removeClass("active");
+    });
+
+    if (!$(".sidebar").length) {
+        $(".toggle-btn").hide();
+    }
+
+    let otherBtns = $(".header-btn").clone(true);
+    $(".other-links").on("click", function () {
+        $(this).toggleClass("active");
+        $(".other-links-data").empty();
+        $(otherBtns).appendTo($(".other-links-data"));
+    });
+
+    // AOS REFRESH FOR ANIMATION
     AOS.refresh();
 });

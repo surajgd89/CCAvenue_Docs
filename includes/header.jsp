@@ -22,5 +22,10 @@
                 <i class="far fa-dash"></i>
             </span>
         </a>
+
+        <a href="javascript:void(0)" class="button button-secondary other-links">
+            <i class="fal fa-ellipsis-vertical"></i>
+            <div class="other-links-data"></div>
+        </a>
     </div>
 </header>

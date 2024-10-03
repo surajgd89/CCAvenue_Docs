@@ -153,17 +153,6 @@
                 </li>
             </ul>
         </li>
-        <li class="other-links">
-            <a href="javascript:void(0)">Other Links</a>
-            <ul class="child">
-                <li>
-                    <a href="https://dashboard.ccavenue.com/jsp/merchant/merchantLogin.jsp" target="_blank">Login</a>
-                </li>
-                <li>
-                    <a href="https://dashboard.ccavenue.com/web/genregistration.do?command=navigateSchemeForm" target="_blank">Sign Up</a>
-                </li>
-            </ul>
-        </li>
     </ul>
 </sidebar>
 <div class="overlay-sidebar"></div>
