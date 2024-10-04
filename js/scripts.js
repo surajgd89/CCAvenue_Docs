@@ -101,4 +101,8 @@ $(function () {
 
     // AOS REFRESH FOR ANIMATION
     AOS.refresh();
+
+
+
+   
 });

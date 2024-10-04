@@ -1,0 +1,9 @@
+.docs-content {
+    margin-left: 30rem;
+    padding: 9rem;
+    transition: all 300ms;
+
+    @include lg {
+        margin-left: 0;
+    }
+}

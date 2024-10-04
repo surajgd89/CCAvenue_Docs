@@ -1,21 +1,23 @@
 .sidebar {
-    position: fixed;
-    top: 33rem;
+    position: absolute;
+    top: 26rem;
     border-right: 1px solid rgb(193, 193, 193, 0.15);
-    height: calc(100vh - 33rem);
+    height: calc(100% - 26rem);
     left: 0rem;
     display: block;
     width: 30rem;
     background: #fafaff;
     overflow-y: scroll;
+    z-index: 1;
     padding: 0 2rem;
-    z-index: 2;
     transition: left 300ms;
 
     @include lg {
         top: 0;
+        position: fixed;
         height: 100vh;
         left: -30rem;
+        z-index: 3;
 
         &.active {
             left: 0;
@@ -293,12 +295,12 @@
 
 .overlay-sidebar {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 2;
     background-color: rgba(0, 0, 0, 0.5);
 
     @include lg {

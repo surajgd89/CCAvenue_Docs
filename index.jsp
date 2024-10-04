@@ -30,13 +30,7 @@
         <!-- MAIN -->
         <main class="wrapper">
             <!-- INTRO -->
-            <section class="intro">
-                <div class="container gx-0">
-                    <h1 class="head">Documentation</h1>
-                    <div class="search open-search-modal"><i class="far fa-search"></i> Search the docs</div>
-                    <p class="desc">Explore our guides and examples to integrate CCAvenue</p>
-                </div>
-            </section>
+            <jsp:include page="includes/intro.jsp" />
 
             <!-- STARTED -->
             <section class="statred">
@@ -216,7 +210,7 @@
                                                 <i class="far fa-dash"></i>
                                             </span>
                                         </h3>
-                                         <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, iste.</p>
+                                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, iste.</p>
                                     </div>
                                 </a>
                             </li>
@@ -236,7 +230,7 @@
                                                 <i class="far fa-dash"></i>
                                             </span>
                                         </h3>
-                                         <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, iste.</p>
+                                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, iste.</p>
                                     </div>
                                 </a>
                             </li>
@@ -256,7 +250,7 @@
                                                 <i class="far fa-dash"></i>
                                             </span>
                                         </h3>
-                                         <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, iste.</p>
+                                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, iste.</p>
                                     </div>
                                 </a>
                             </li>
@@ -281,7 +275,7 @@
                                                 <i class="far fa-dash"></i>
                                             </span>
                                         </h3>
-                                         <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, iste.</p>
+                                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, iste.</p>
                                     </div>
                                 </a>
                             </li>
@@ -301,7 +295,7 @@
                                                 <i class="far fa-dash"></i>
                                             </span>
                                         </h3>
-                                         <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, iste.</p>
+                                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, iste.</p>
                                     </div>
                                 </a>
                             </li>
