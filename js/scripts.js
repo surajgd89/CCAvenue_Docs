@@ -99,10 +99,9 @@ $(function () {
         }
     });
 
+    // var DocsContent_HT = $(".docs-content").outerHeight();
+    // $(".sidebar").css("--height", DocsContent_HT + "px");
+
     // AOS REFRESH FOR ANIMATION
     AOS.refresh();
-
-
-
-   
 });

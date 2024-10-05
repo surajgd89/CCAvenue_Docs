@@ -34,13 +34,7 @@
         <main class="wrapper">
             <!-- INTRO -->
             <jsp:include page="includes/intro.jsp" />
-            <section class="docs-content">
-                <div>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta explicabo enim labore, itaque, error repudiandae autem suscipit pariatur nesciunt dolores, deserunt natus neque consequatur vero aperiam illo dolore ullam animi quod obcaecati necessitatibus! Nostrum mollitia assumenda quas sit, beatae sunt deserunt odit totam dignissimos nihil neque iste at autem modi doloribus!
-                    Dolor est doloremque ipsam illum corrupti quo cum minus amet laborum beatae iusto similique eligendi libero corporis suscipit commodi praesentium quibusdam quos, atque nisi soluta voluptate, repellendus recusandae maxime. Vitae molestias est soluta ad atque odio! Recusandae neque, dignissimos incidunt fuga sed beatae rerum magnam quas ducimus ratione vel asperiores debitis
-                    nobis numquam. Maiores molestias amet commodi sed et aliquam quis pariatur deserunt a molestiae aperiam eum, libero sequi consequatur repellat suscipit, mollitia nesciunt. Perspiciatis aperiam nam natus repudiandae ad rem enim nobis magni tempora ipsam, assumenda laboriosam aliquid at deserunt quidem qui ipsa voluptas non, commodi laborum omnis mollitia? Ipsam sunt, sint
-                </div>
-            </section>
+            <section class="docs-content"></section>
         </main>
 
         <!-- LOADER -->
@@ -63,7 +57,7 @@
 
         <!-- SCRIPTS -->
         <script src="js/search.js"></script>
-        <!-- <script src="js/ajax.js"></script> -->
+        <script src="js/ajax.js"></script>
         <script src="js/scripts.js"></script>
 
         <!-- AOS -->

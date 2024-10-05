@@ -4,7 +4,7 @@
     </div>
     <ul class="parent">
         <li class="active">
-            <a href="javascript:void(0)">Get Started<i class="fal fa-angle-right"></i></a>
+            <a href="#pages/get-started.jsp">Get Started<i class="fal fa-angle-right"></i></a>
         </li>
         <li>
             <a href="javascript:void(0)">Online Payments</a>
@@ -12,8 +12,8 @@
                 <li>
                     <a href="javascript:void(0)"><i class="fal fa-angle-right"></i>Invoice</a>
                     <ul class="subchild">
-                        <li><a href="#/pages/itemized-invoice.jsp">Itemized Invoice</a></li>
-                        <li><a href="#/pages/quick-invoice.jsp">Quick Invoice</a></li>
+                        <li><a href="#pages/itemized-invoice.jsp">Itemized Invoice</a></li>
+                        <li><a href="#pages/quick-invoice.jsp">Quick Invoice</a></li>
                         <li><a href="javascript:void(0)">Recurring Invoice</a></li>
                         <li><a href="javascript:void(0)">Invoice Settings</a></li>
                         <li><a href="javascript:void(0)">Invoice Item Inventory</a></li>

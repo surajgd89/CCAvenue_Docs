@@ -1,8 +1,9 @@
 .sidebar {
+    --height: 100%;
     position: absolute;
     top: 26rem;
     border-right: 1px solid rgb(193, 193, 193, 0.15);
-    height: calc(100% - 26rem);
+    min-height: calc(var(--height) - 26rem);
     left: 0rem;
     display: block;
     width: 30rem;
