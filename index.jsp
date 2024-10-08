@@ -534,6 +534,9 @@
         <!-- LOADER -->
         <jsp:include page="includes/loader.jsp" />
 
+        <!-- SCROLL TO TOP -->
+        <button class="scroll-to-btn"><i class="fal fa-arrow-up"></i></button>
+
         <!-- JQUERY -->
         <script src="plugins/jquery/jquery.min.js"></script>
 

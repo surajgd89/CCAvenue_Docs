@@ -3,12 +3,9 @@ function ajaxload(url) {
         url: url,
         beforeSend: function () {
             //NProgress.start();
-            //$('.loader').fadeIn('500');
         },
         success: function (result, status) {
-            //$('.loader').fadeOut('500');
             $(".docs-content").html(result);
-            //$('.user-btn.dropdown').removeClass('open');
         },
         error: function (status, error) {
             $(".docs-content").html("404 Page Not Found = " + url);
@@ -16,7 +13,6 @@ function ajaxload(url) {
 
         complete: function (status) {
             //allFunctions();
-            //allHiCharts();
             //NProgress.done();
             setTimeout(function () {
                 $("body,html").animate({ scrollTop: 0 }, 500);
@@ -38,9 +34,19 @@ function pageajax() {
     } else {
         $(".parent li a").each(function () {
             $(".parent li").removeClass("active");
-            $('.parent li a[href="' + "#" + ajax_url + '"]')
-                .parent("li")
-                .addClass("active");
+
+            let target = $('a[href="' + "#" + ajax_url + '"]');
+
+            target.parent("li").addClass("active");
+
+            if (target.parents("ul").hasClass("subchild") || target.parents("ul").hasClass("innerchild")) {
+                target.parents("ul").slideDown().parent("li").addClass("open");
+            }
+
+            if ($(window).width() < 992) {
+                $(".sidebar").removeClass("active");
+                $(".overlay-sidebar").removeClass("active");
+            }
         });
         ajaxload(ajax_url);
     }

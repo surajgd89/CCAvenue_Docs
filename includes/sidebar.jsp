@@ -36,7 +36,7 @@
                             <a href="javascript:void(0)">Third party shopping cart<i class="fal fa-angle-right"></i></a>
                             <ul class="innerchild">
                                 <li><a href="javascript:void(0)">Drupal</a></li>
-                                <li><a href="javascript:void(0)">Magento</a></li>
+                                <li><a href="#pages/magento.jsp">Magento</a></li>
                                 <li><a href="javascript:void(0)">Woo Commerce</a></li>
                                 <li><a href="javascript:void(0)">PrestaShop</a></li>
                                 <li><a href="javascript:void(0)">Give</a></li>
@@ -62,7 +62,7 @@
             <a href="javascript:void(0)">Offline Payment</a>
             <ul class="child">
                 <li>
-                    <a href="javascript:void(0)">TayPay</a>
+                    <a href="#pages/tappay.jsp">TapPay</a>
                 </li>
                 <li>
                     <a href="javascript:void(0)"><i class="fal fa-angle-right"></i>QRPay</a>

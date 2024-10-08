@@ -99,6 +99,20 @@ $(function () {
         }
     });
 
+    // SCROLL TO BUTTON
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $(".scroll-to-btn").fadeIn();
+        } else {
+            $(".scroll-to-btn").fadeOut();
+        }
+    });
+
+    $(".scroll-to-btn").click(function () {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
     // var DocsContent_HT = $(".docs-content").outerHeight();
     // $(".sidebar").css("--height", DocsContent_HT + "px");
 

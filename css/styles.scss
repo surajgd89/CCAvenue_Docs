@@ -468,5 +468,27 @@ body {
     }
 }
 
+//SCROLL TO BTN
+.scroll-to-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 4rem;
+    height: 4rem;
+    padding: 1rem;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.6rem;
+    background-color: #1572e8;
+    color: #fff;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    display: none;
+    &:hover {
+        background-color: #1572e8;
+    }
+}
+
 //SEARCH MODAL
 @import "_search.scss";

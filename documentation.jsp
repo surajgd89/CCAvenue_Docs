@@ -37,6 +37,9 @@
             <section class="docs-content"></section>
         </main>
 
+        <!-- SCROLL TO TOP -->
+        <button class="scroll-to-btn"><i class="fal fa-arrow-up"></i></button>
+
         <!-- LOADER -->
         <jsp:include page="includes/loader.jsp" />
 
@@ -55,12 +58,12 @@
         <!-- SLICK -->
         <script src="plugins/slick/slick.min.js"></script>
 
+        <!-- AOS -->
+        <script src="plugins/aos-master/aos.js"></script>
+
         <!-- SCRIPTS -->
         <script src="js/search.js"></script>
         <script src="js/ajax.js"></script>
         <script src="js/scripts.js"></script>
-
-        <!-- AOS -->
-        <script src="plugins/aos-master/aos.js"></script>
     </body>
 </html>
