@@ -85,7 +85,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <a href="documentation.jsp" class="button button-primary btn-started"
+                            <a href="docs.jsp" class="button button-primary btn-started"
                                 >Get Started
                                 <span class="arrow">
                                     <i class="far fa-angle-right"></i>
@@ -531,11 +531,11 @@
         <!-- SEARCH -->
         <jsp:include page="includes/search.jsp" />
 
-        <!-- LOADER -->
-        <jsp:include page="includes/loader.jsp" />
-
         <!-- SCROLL TO TOP -->
         <button class="scroll-to-btn"><i class="fal fa-arrow-up"></i></button>
+
+        <!-- LOADER -->
+        <jsp:include page="includes/loader.jsp" />
 
         <!-- JQUERY -->
         <script src="plugins/jquery/jquery.min.js"></script>

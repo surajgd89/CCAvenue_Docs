@@ -1,41 +1,78 @@
+const skeleton = `
+<!-- ==TEMPLATE 1 START== -->
+<div class="skeleton skeleton-heading width-35 height-5"></div>
+<div class="skeleton skeleton-paragraph width-100 height-2"></div>
+<div class="skeleton skeleton-paragraph width-100 height-2"></div>
+<div class="skeleton skeleton-paragraph width-100 height-2"></div>
+<div class="skeleton skeleton-paragraph width-85 height-2"></div>
+<div class="spacer height-4"></div>
+<div class="skeleton skeleton-heading width-20 height-3"></div>
+<div class="skeleton skeleton-paragraph width-100 height-2"></div>
+<div class="skeleton skeleton-paragraph width-75 height-2"></div>
+<div class="spacer height-2"></div>
+<div class="skeleton skeleton-heading width-20 height-3"></div>
+<div class="skeleton skeleton-paragraph width-100 height-2"></div>
+<div class="skeleton skeleton-paragraph width-50 height-2"></div>
+<div class="spacer height-2"></div>
+<div class="skeleton skeleton-heading width-20 height-3"></div>
+<div class="skeleton skeleton-paragraph width-100 height-2"></div>
+<div class="skeleton skeleton-paragraph width-25 height-2"></div>
+<div class="spacer height-8"></div>
+<!-- ==TEMPLATE 1 END== -->
+<!-- ==TEMPLATE 2 START== -->
+<div class="skeleton skeleton-heading width-35 height-5"></div>
+<div class="skeleton skeleton-paragraph width-100 height-2"></div>
+<div class="skeleton skeleton-paragraph width-100 height-2"></div>
+<div class="skeleton skeleton-paragraph width-100 height-2"></div>
+<div class="skeleton skeleton-paragraph width-85 height-2"></div>
+<div class="spacer height-4"></div>
+<div class="skeleton skeleton-heading width-20 height-3"></div>
+<div class="skeleton skeleton-paragraph width-100 height-2"></div>
+<div class="skeleton skeleton-paragraph width-75 height-2"></div>
+<div class="spacer height-2"></div>
+<div class="skeleton skeleton-heading width-20 height-3"></div>
+<div class="skeleton skeleton-paragraph width-100 height-2"></div>
+<div class="skeleton skeleton-paragraph width-50 height-2"></div>
+<div class="spacer height-2"></div>
+<div class="skeleton skeleton-heading width-20 height-3"></div>
+<div class="skeleton skeleton-paragraph width-100 height-2"></div>
+<div class="skeleton skeleton-paragraph width-25 height-2"></div>
+<!-- ==TEMPLATE 2 END== -->`;
+
 function ajaxload(url) {
     $.ajax({
         url: url,
         beforeSend: function () {
-            //NProgress.start();
+            $(".docs-content").html(skeleton);
+            $("body,html").animate({ scrollTop: 0 }, 500);
         },
         success: function (result, status) {
-            $(".docs-content").html(result);
+            setTimeout(function () {
+                $(".docs-content").html(result);
+                allFunctions();
+            }, 2000);
         },
         error: function (status, error) {
             $(".docs-content").html("404 Page Not Found = " + url);
-        },
-
-        complete: function (status) {
-            //allFunctions();
-            //NProgress.done();
-            setTimeout(function () {
-                $("body,html").animate({ scrollTop: 0 }, 500);
-            }, 1000);
         },
     });
 }
 
 function pageajax() {
     var hash = window.location.href.split("#");
-    var ajax_url = hash[1];
-    var default_url = "pages/get-started.jsp";
+    var url = hash[1];
 
-    if (typeof ajax_url === "undefined") {
+    url = typeof url === "undefined" || url === undefined ? "pages/get-started.jsp" : url;
+
+    if (typeof url === "undefined") {
         $(".parent li a").each(function () {
             $('a[href="#pages/get-started.jsp"]').parent("li").addClass("active");
         });
-        ajaxload(default_url);
     } else {
         $(".parent li a").each(function () {
             $(".parent li").removeClass("active");
 
-            let target = $('a[href="' + "#" + ajax_url + '"]');
+            let target = $('a[href="' + "#" + url + '"]');
 
             target.parent("li").addClass("active");
 
@@ -48,8 +85,9 @@ function pageajax() {
                 $(".overlay-sidebar").removeClass("active");
             }
         });
-        ajaxload(ajax_url);
     }
+
+    ajaxload(url);
 }
 
 $(window).on("load", function () {

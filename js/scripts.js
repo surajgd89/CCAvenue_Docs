@@ -1,10 +1,10 @@
 $(function () {
+    // AOS INIT
+    AOS.init();
+
     setTimeout(() => {
         $(".loader").css("display", "none");
     }, 1500);
-
-    // AOS INIT
-    AOS.init();
 
     // SLICK
     $(".artwork-slide").slick({
@@ -23,67 +23,7 @@ $(function () {
         theme: "minimal-dark",
     });
 
-    //SIDEBAR
-    $(".child > li > a").click(function (e) {
-        if ($(this).next(".subchild").length) {
-            $(".child > li").removeClass("open");
-            $(this).parent("li").addClass("open");
-
-            if ($(this).next(".subchild").is(":visible")) {
-                $(this).next(".subchild").slideUp();
-                $(this).parent("li").removeClass("open");
-            } else {
-                $(".subchild").slideUp();
-                $(this).next(".subchild").slideDown();
-            }
-
-            $(".innerchild").slideUp();
-            $(".innerchild").parent("li").removeClass("open");
-        }
-    });
-
-    $(".subchild > li > a").click(function (e) {
-        if ($(this).next(".innerchild").length) {
-            $(".subchild > li").removeClass("open");
-            $(this).parent("li").addClass("open");
-
-            if ($(this).next(".innerchild").is(":visible")) {
-                $(this).next(".innerchild").slideUp();
-                $(this).parent("li").removeClass("open");
-            } else {
-                $(".innerchild").slideUp();
-                $(this).next(".innerchild").slideDown();
-            }
-        }
-    });
-
-    $("li a").click(function (e) {
-        if ($(this).next(".child").length || $(this).next(".subchild").length || $(this).next(".innerchild").length) {
-        } else {
-            $("li").removeClass("active");
-            $(this).parent("li").addClass("active");
-
-            if (!$(this).parents("ul").hasClass("innerchild")) {
-                $(this).parent("li").siblings().removeClass("open");
-                $(this).parents(".subchild").find(".innerchild").slideUp();
-            }
-        }
-    });
-
-    $(".toggle-btn").on("click", function () {
-        $(".overlay-sidebar").addClass("active");
-        $(".sidebar").addClass("active");
-    });
-
-    $(".close-sidebar, .overlay-sidebar").on("click", function () {
-        $(".overlay-sidebar").removeClass("active");
-        $(".sidebar").removeClass("active");
-    });
-
-    if (!$(".sidebar").length) {
-        $(".toggle-btn").hide();
-    }
-
+    // HEADER
     let otherBtns = $(".header-btn").clone(true);
 
     $(".other-links").on("click", function () {
@@ -113,9 +53,49 @@ $(function () {
         return false;
     });
 
-    // var DocsContent_HT = $(".docs-content").outerHeight();
-    // $(".sidebar").css("--height", DocsContent_HT + "px");
-
-    // AOS REFRESH FOR ANIMATION
+    // AOS REFRESH
     AOS.refresh();
 });
+
+function allFunctions() {
+    //PAGE INTER SCROLL
+
+    $(".nav-item:first-child").addClass("active");
+
+    $(window).on("scroll", function () {
+        let scrollPos = $(document).scrollTop() + 140;
+
+        $(".nav-link").each(function () {
+            let currLink = $(this);
+            let refElm = $(currLink.attr("href"));
+            let refElm_topPos = refElm.position().top;
+
+            if (refElm_topPos <= scrollPos && refElm_topPos + refElm.height() > scrollPos) {
+                $(".nav-item").removeClass("active");
+                currLink.parent(".nav-item").addClass("active");
+            }
+        });
+
+        let firstSectionTopPos = $($(".nav-link:first").attr("href")).position().top;
+
+        if (scrollPos < firstSectionTopPos) {
+            $(".nav-item").removeClass("active");
+            $(".nav-item:first-child").addClass("active");
+        }
+    });
+
+    $(".nav-link").on("click", function (e) {
+        e.preventDefault();
+
+        let currLink = $(this);
+        $(".nav-item").removeClass("active");
+        currLink.parent(".nav-item").addClass("active");
+
+        $("html, body").animate(
+            {
+                scrollTop: $($(this).attr("href")).offset().top - 140,
+            },
+            500
+        );
+    });
+}

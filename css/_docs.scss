@@ -1,0 +1,385 @@
+.docs-content {
+    margin-left: 30rem;
+    padding: 7rem 4rem 4rem 9rem;
+    transition: all 300ms;
+
+    @include lg {
+        margin-left: 0;
+        padding: 3rem;
+    }
+
+    .page-data {
+        opacity: 0;
+        animation: fadeIn 500ms ease-in forwards;
+        color: #132644;
+        display: flex;
+        column-gap: 5rem;
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .data-content {
+            flex: 1 1 auto;
+            max-width: 100%;
+
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+
+            ol {
+                margin: 0;
+                padding: 0;
+            }
+
+            h1,
+            h2 {
+                margin: 0;
+            }
+
+            .font-semibold {
+                font-weight: 600;
+            }
+
+            .level-1 {
+                > .item {
+                    > .title {
+                        font-size: 4rem;
+                        font-weight: 600;
+                        margin-bottom: 2rem;
+                        line-height: 1.15;
+                        display: flex;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        column-gap: 2rem;
+                        row-gap: 1rem;
+
+                        @include md {
+                            font-size: 3.4rem;
+                        }
+                    }
+
+                    > .desc {
+                        font-size: 1.8rem;
+                        margin-bottom: 3rem;
+                        line-height: 1.8;
+
+                        @include md {
+                            font-size: 1.6rem;
+                        }
+                    }
+
+                    > .list {
+                        padding-left: 2rem;
+                    }
+
+                    .download-dropdown {
+                        margin-right: auto;
+                        margin-left: 0;
+                        background: #fafaff;
+                        border: 1px solid #e2e2e2;
+                        border-radius: 4px;
+                        position: relative;
+
+                        &:hover {
+                            .download-options {
+                                opacity: 1;
+                            }
+                        }
+
+                        .title {
+                            padding: 0.6rem;
+                            font-weight: 600;
+                            font-size: 1.2rem;
+                            display: flex;
+                            align-items: center;
+                            cursor: pointer;
+
+                            .fa-file-download {
+                                font-size: 1.4rem;
+                                color: #e7353a;
+                                margin-right: 0.8rem;
+                            }
+
+                            .fa-caret-down {
+                                margin-left: 1rem;
+                            }
+                        }
+
+                        .download-options {
+                            margin: 0;
+                            padding: 0.5rem 0;
+                            list-style-type: none;
+                            background: #fff;
+                            border: 1px solid #e2e2e2;
+                            border-radius: 4px;
+                            position: absolute;
+                            width: 100%;
+                            min-width: 150px;
+                            top: 100%;
+                            left: 0;
+                            z-index: 1;
+                            transform: translateY(2px);
+                            transition: opacity 300ms;
+                            opacity: 0;
+                            a {
+                                font-size: 1.2rem;
+                                font-weight: 500;
+                                text-decoration: none;
+                                padding: 0.8rem;
+                                color: #132644;
+                                display: flex;
+                                flex-wrap: wrap;
+                                column-gap: 0.5rem;
+                                width: 100%;
+                                align-items: baseline;
+                                transition: all 300ms;
+
+                                &:last-child {
+                                    margin-bottom: 0;
+                                }
+
+                                &:hover {
+                                    color: #1572e8;
+                                    background-color: #fafaff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .level-2 {
+                margin-top: 2rem;
+
+                > .item {
+                    margin-bottom: 4rem;
+                    font-size: 1.6rem;
+
+                    > .title {
+                        font-size: 2.4rem;
+                        font-weight: 600;
+                        margin-bottom: 2rem;
+                        line-height: 1.15;
+                    }
+
+                    > .desc {
+                        font-size: 1.6rem;
+                        margin-bottom: 3rem;
+                        line-height: 1.8;
+
+                        @include md {
+                            font-size: 1.5rem;
+                        }
+                    }
+
+                    > .list {
+                        padding-left: 2rem;
+                    }
+                }
+            }
+
+            .level-3 {
+                margin-top: 2rem;
+                > .item {
+                    margin-bottom: 2rem;
+                    font-size: 1.6rem;
+                    line-height: 1.8;
+
+                    &::marker {
+                        font-weight: 600;
+                    }
+
+                    > .title {
+                        font-size: 2.4rem;
+                        font-weight: 600;
+                        margin-bottom: 2rem;
+                        line-height: 1.15;
+                    }
+
+                    > .desc {
+                        font-size: 1.6rem;
+                        margin-bottom: 0;
+
+                        @include md {
+                            font-size: 1.5rem;
+                        }
+                    }
+
+                    > .list {
+                        padding-left: 0;
+                    }
+                }
+            }
+
+            .level-4 {
+                margin-top: 2rem;
+
+                > .item {
+                    margin-bottom: 2rem;
+                    font-size: 1.6rem;
+
+                    > .title {
+                        font-size: 1.6rem;
+                        font-weight: 600;
+                        margin-bottom: 1rem;
+                        line-height: 1.15;
+                    }
+
+                    > .desc {
+                        font-size: 1.6rem;
+                        margin-bottom: 3rem;
+
+                        @include md {
+                            font-size: 1.5rem;
+                        }
+                    }
+
+                    > .list {
+                        padding-left: 2rem;
+                    }
+                }
+            }
+
+            .level-5 {
+                > .item {
+                    margin-bottom: 0.5rem;
+                    font-size: 1.6rem;
+                    line-height: 1.8;
+                }
+            }
+        }
+
+        .data-info {
+            flex: 0 1 280px;
+            min-width: 280px;
+
+            @include lg {
+                display: none;
+            }
+
+            .info-list {
+                position: sticky;
+                top: 14rem;
+
+                .navigation-item {
+                    margin-bottom: 4rem;
+
+                    .title {
+                        padding: 1.2rem 1.5rem;
+                        padding-left: 0;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        font-size: 1.4rem;
+                    }
+
+                    .nav-list {
+                        margin: 0;
+                        padding: 1.2rem 1.5rem;
+                        list-style-type: none;
+                        border-left: 1px solid #e2e2e2;
+                        .nav-item {
+                            margin-bottom: 1.2rem;
+                            position: relative;
+
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                            .nav-link {
+                                font-size: 1.4rem;
+                                display: flex;
+                                align-items: baseline;
+                                width: 100%;
+                                text-decoration: none;
+                                color: #132644;
+                                transition: all 300ms;
+
+                                small {
+                                    margin-left: 0.5rem;
+                                }
+
+                                i {
+                                    font-size: 1.6rem;
+                                    color: #e7353a;
+                                    margin-left: auto;
+                                    margin-right: 0;
+                                }
+                            }
+
+                            &.active {
+                                .nav-link {
+                                    color: #1572e8;
+                                }
+
+                                &::before {
+                                    content: "";
+                                    height: 100%;
+                                    width: 2px;
+                                    background: #1572e8;
+                                    position: absolute;
+                                    top: 0;
+                                    bottom: 0;
+                                    margin: auto;
+                                    left: -1.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .download-item {
+                    border: 1px solid #e2e2e2;
+                    border-radius: 6px;
+                    margin-bottom: 2rem;
+
+                    .title {
+                        padding: 1.2rem 1.5rem;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        font-size: 1.4rem;
+                        border-bottom: 1px solid #e2e2e2;
+                    }
+
+                    .list {
+                        margin: 0;
+                        padding: 1.2rem 1.5rem;
+                        list-style-type: none;
+                        .item {
+                            margin-bottom: 1.2rem;
+
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                            a {
+                                font-size: 1.4rem;
+                                display: flex;
+                                align-items: baseline;
+                                width: 100%;
+                                text-decoration: none;
+                                color: #132644;
+
+                                small {
+                                    margin-left: 0.5rem;
+                                }
+
+                                i {
+                                    font-size: 1.6rem;
+                                    color: #e7353a;
+                                    margin-left: auto;
+                                    margin-right: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

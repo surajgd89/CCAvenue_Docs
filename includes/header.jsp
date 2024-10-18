@@ -1,6 +1,6 @@
 <header class="header">
     <div class="toggle-btn"><i class="fal fa-bars"></i></div>
-    <a href="javascript:void(0)" class="logo">
+    <a href="index.jsp" class="logo">
         <svg class="logo-svg" viewBox="0 0 631.3 76">
             <use xlink:href="#cc-logo-docs-beta"></use>
         </svg>

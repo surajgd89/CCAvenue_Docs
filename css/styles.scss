@@ -125,7 +125,6 @@ body {
 }
 
 //SVG ASSETS
-
 .svg-colors {
     width: 0;
     height: 0;
@@ -136,53 +135,53 @@ body {
 
 .svg-assets {
     display: none;
+}
 
-    #cc-loader-ico {
-        .color-1 {
-            fill: #1572e8;
-        }
+#cc-loader-ico {
+    .color-1 {
+        fill: #1572e8;
+    }
+}
+
+#cc-logo-black {
+    .color-0 {
+        fill: #000;
     }
 
-    #cc-logo-black {
-        .color-0 {
-            fill: #000;
-        }
-
-        .color-2 {
-            fill: #1c81eb;
-        }
-
-        .color-1 {
-            fill: red;
-        }
+    .color-2 {
+        fill: #1c81eb;
     }
 
-    #cc-logo-docs-beta {
-        .color-1 {
-            fill: #ee3520;
-        }
+    .color-1 {
+        fill: red;
+    }
+}
 
-        .color-2 {
-            fill: #fff;
-        }
-
-        .color-3 {
-            fill: #1c80ec;
-        }
-
-        .color-4 {
-            fill: #100f0d;
-        }
-
-        .tag {
-            display: block;
-        }
+#cc-logo-docs-beta {
+    .color-1 {
+        fill: #ee3520;
     }
 
-    #ico-shield {
-        .color-1 {
-            fill: url(#ico-shield-gradient);
-        }
+    .color-2 {
+        fill: #fff;
+    }
+
+    .color-3 {
+        fill: #1c80ec;
+    }
+
+    .color-4 {
+        fill: #100f0d;
+    }
+
+    .tag {
+        display: block;
+    }
+}
+
+#ico-shield {
+    .color-1 {
+        fill: url(#ico-shield-gradient);
     }
 }
 
@@ -377,8 +376,11 @@ body {
 //LANDING
 @import "_landing.scss";
 
-//DOCUMENTATION
-@import "_documentation.scss";
+//DOCS
+@import "_docs.scss";
+
+//SEARCH MODAL
+@import "_search.scss";
 
 // FOOTER
 .footer {
@@ -408,6 +410,28 @@ body {
             display: inline-flex;
             gap: 0.5rem;
         }
+    }
+}
+
+//SCROLL TO BTN
+.scroll-to-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 4rem;
+    height: 4rem;
+    padding: 1rem;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.6rem;
+    background-color: #1572e8;
+    color: #fff;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    display: none;
+    &:hover {
+        background-color: #1572e8;
     }
 }
 
@@ -468,27 +492,36 @@ body {
     }
 }
 
-//SCROLL TO BTN
-.scroll-to-btn {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    width: 4rem;
-    height: 4rem;
-    padding: 1rem;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 1.6rem;
-    background-color: #1572e8;
-    color: #fff;
-    border: none;
-    border-radius: 0.4rem;
-    cursor: pointer;
-    display: none;
-    &:hover {
-        background-color: #1572e8;
+// SKELETON
+.skeleton {
+    background-color: #e9edf3;
+    border-radius: 0.3rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
+        animation: shimmer 1s infinite linear;
+
+        @keyframes shimmer {
+            0% {
+                left: -100%;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+    }
+
+    &.skeleton-paragraph {
+        margin-bottom: 1rem;
     }
 }
-
-//SEARCH MODAL
-@import "_search.scss";

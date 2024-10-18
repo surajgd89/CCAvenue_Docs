@@ -8,7 +8,7 @@
         linear-gradient(90deg, rgb(3, 32, 90) 0%, rgb(9, 71, 196) 50%, rgb(0, 52, 157) 100%);
 
     @include md {
-        padding: 3rem 2rem;
+        padding: 3rem;
         min-height: auto;
     }
 
@@ -17,6 +17,7 @@
         margin-bottom: 2rem;
         color: #ffffff;
         font-size: 3.8rem;
+        line-height: 1.2;
 
         @include md {
             margin-bottom: 1.5rem;

@@ -136,7 +136,7 @@
             <a href="javascript:void(0)">Integrations</a>
             <ul class="child">
                 <li>
-                    <a href="javascript:void(0)">Merchant Integration</a>
+                    <a href="javascript:void(0)"><i class="fal fa-angle-right"></i>Merchant Integration</a>
                     <ul class="subchild">
                         <li><a href="javascript:void(0)">Seamless Integration</a></li>
                         <li><a href="javascript:void(0)">Non Seamless Integration</a></li>
@@ -145,7 +145,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="javascript:void(0)">Native SDK Integration</a>
+                    <a href="javascript:void(0)"><i class="fal fa-angle-right"></i>Native SDK Integration</a>
                     <ul class="subchild">
                         <li><a href="javascript:void(0)">iOS Integration</a></li>
                         <li><a href="javascript:void(0)">Android Integration</a></li>
