@@ -7,21 +7,25 @@ $(function () {
     }, 1500);
 
     // SLICK
-    $(".artwork-slide").slick({
-        dots: true,
-        arrows: false,
-        infinite: true,
-        speed: 300,
-        autoplay: true,
-        fade: true,
-        cssEase: "linear",
-    });
+    if ($(".artwork-slide").length) {
+        $(".artwork-slide").slick({
+            dots: true,
+            arrows: false,
+            infinite: true,
+            speed: 300,
+            autoplay: true,
+            fade: true,
+            cssEase: "linear",
+        });
+    }
 
     // MCUSTOMSCROLLBAR
-    $(".result-body").mCustomScrollbar({
-        axis: "y",
-        theme: "minimal-dark",
-    });
+    if ($(".result-body").length) {
+        $(".result-body").mCustomScrollbar({
+            axis: "y",
+            theme: "minimal-dark",
+        });
+    }
 
     // HEADER
     let otherBtns = $(".header-btn").clone(true);
@@ -51,6 +55,13 @@ $(function () {
     $(".scroll-to-btn").click(function () {
         $("html, body").animate({ scrollTop: 0 }, "slow");
         return false;
+    });
+
+    //IMAGE-MODAL
+    $(".image-modal").click(function (e) {
+        if (e.target !== $(this)[0]) {
+            $(this).hide();
+        }
     });
 
     // AOS REFRESH
@@ -86,11 +97,6 @@ function allFunctions() {
 
     $(".nav-link").on("click", function (e) {
         e.preventDefault();
-
-        let currLink = $(this);
-        $(".nav-item").removeClass("active");
-        currLink.parent(".nav-item").addClass("active");
-
         $("html, body").animate(
             {
                 scrollTop: $($(this).attr("href")).offset().top - 140,
@@ -98,4 +104,18 @@ function allFunctions() {
             500
         );
     });
+
+    //PRISM
+    Prism.highlightAll();
+}
+
+//IMAGE MODAL
+function openImageModal(event) {
+    let largeImg = $(event).attr("large-src");
+    $(".image-modal").css("display", "flex");
+    $("#imgModal").attr("src", largeImg);
+}
+function closeImageModal() {
+    $(".image-modal").hide();
+    $("#imgModal").attr("src", "");
 }

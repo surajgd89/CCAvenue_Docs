@@ -6,15 +6,14 @@
         <title>CCAvenue Docs (Beta)</title>
         <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 
-        <!-- SLICK -->
-        <link rel="stylesheet" href="plugins/slick/slick.css" />
-        <link rel="stylesheet" href="plugins/slick/slick-theme.css" />
-
         <!-- MCUSTOMSCROLLBAR -->
         <link rel="stylesheet" href="plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.css" />
 
         <!-- AOS -->
         <link rel="stylesheet" href="plugins/aos-master/aos.css" />
+
+        <!-- PRISM -->
+        <link rel="stylesheet" href="plugins/prism/prism.css" />
 
         <!-- STYLES -->
         <link rel="stylesheet" href="css/styles.css" />
@@ -38,6 +37,12 @@
             <section class="docs-content"></section>
         </main>
 
+        <!-- IMAGE MODAL -->
+        <div class="image-modal">
+            <span class="image-modal-close" id="closeBtn"><i class="fal fa-times"></i></span>
+            <img class="image-modal-content" id="imgModal" onclick="closeImageModal()" />
+        </div>
+
         <!-- SCROLL TO TOP -->
         <button class="scroll-to-btn"><i class="fal fa-arrow-up"></i></button>
 
@@ -56,8 +61,8 @@
         <!-- TYPEAHEAD -->
         <script src="plugins/typeahead/typeahead.bundle.js"></script>
 
-        <!-- SLICK -->
-        <script src="plugins/slick/slick.min.js"></script>
+        <!-- PRISM -->
+        <script src="plugins/prism/prism.js"></script>
 
         <!-- AOS -->
         <script src="plugins/aos-master/aos.js"></script>

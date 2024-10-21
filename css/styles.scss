@@ -382,6 +382,37 @@ body {
 //SEARCH MODAL
 @import "_search.scss";
 
+//IMAGE MODAL
+
+.image-modal {
+    display: none;
+    margin: auto;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    .image-modal-content {
+        display: block;
+        margin: auto;
+        max-width: 90%;
+        max-height: 90%;
+        cursor: zoom-out;
+    }
+
+    .image-modal-close {
+        position: absolute;
+        top: 3rem;
+        right: 3rem;
+        color: #fff;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+}
+
 // FOOTER
 .footer {
     padding: 0 4rem;
