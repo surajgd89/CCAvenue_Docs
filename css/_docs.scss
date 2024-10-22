@@ -8,6 +8,10 @@
         padding: 3rem;
     }
 
+    @include md {
+        padding: 2.5rem;
+    }
+
     .page-data {
         opacity: 0;
         animation: fadeIn 500ms ease-in forwards;
@@ -51,17 +55,6 @@
             .code-toolbar {
                 margin-top: 2rem;
                 margin-bottom: 2rem;
-                :not(pre) > code[class*="language-"],
-                pre[class*="language-"] {
-                    background: #272822;
-                }
-
-                pre[class*="language-"] {
-                    padding: 1.5rem;
-                    margin: 0;
-                    overflow: auto;
-                    border-radius: 0.4rem;
-                }
 
                 .toolbar {
                     top: 0.5em;
@@ -70,7 +63,9 @@
                     .copy-to-clipboard-button {
                         padding: 0.5rem 1rem;
                         border-radius: 1.5rem;
+                        font-weight: 400;
                         cursor: pointer;
+                        background: #009ddc;
                         color: #fff;
                         border: 0;
                         outline: 0;
@@ -78,13 +73,34 @@
                 }
             }
 
+            :not(pre) > code[class*="language-"],
+            pre[class*="language-"] {
+                background: #161a1c;
+            }
+
+            pre[class*="language-"] {
+                padding: 1.5rem;
+                margin: 0;
+                overflow: auto;
+                border-radius: 0.4rem;
+            }
+
+            code[class*="language-"],
+            pre[class*="language-"] {
+                white-space: pre-wrap;
+                word-break: break-word;
+            }
+
             .table-responsive {
+                position: relative;
                 width: 100%;
                 overflow-x: auto;
                 margin-top: 2rem;
                 margin-bottom: 2rem;
                 .table {
                     border-collapse: collapse;
+                    width: 100%;
+                    max-width: 100%;
 
                     tr {
                         th,
@@ -100,8 +116,11 @@
                         th {
                             font-size: 1.5rem;
                             font-weight: normal;
-                            white-space: nowrap;
                             background-color: #fafaff;
+
+                            @include md {
+                                font-size: 1.4rem;
+                            }
                         }
 
                         td {
@@ -152,6 +171,10 @@
 
                     > .list {
                         padding-left: 2rem;
+
+                        @include sm {
+                            padding-left: 0;
+                        }
                     }
 
                     .download-dropdown {
@@ -249,7 +272,7 @@
 
                     > .desc {
                         font-size: 1.6rem;
-                        margin-bottom: 3rem;
+                        margin-bottom: 2rem;
                         line-height: 1.8;
 
                         @include md {
@@ -343,10 +366,10 @@
         }
 
         .data-info {
-            flex: 0 1 280px;
+            flex: 0 0 280px;
             min-width: 280px;
 
-            @include lg {
+            @include xl {
                 display: none;
             }
 

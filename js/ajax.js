@@ -44,7 +44,7 @@ function ajaxload(url) {
         url: url,
         beforeSend: function () {
             $(".docs-content").html(skeleton);
-            $("body,html").animate({ scrollTop: 0 }, 500);
+            $("body,html").animate({ scrollTop: 0 }, "slow");
         },
         success: function (result, status) {
             setTimeout(function () {
