@@ -6,6 +6,12 @@
         <title>CCAvenue Docs (Beta)</title>
         <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 
+        <!--FONT-->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+
+        <!--FONT AWESOME-->
+        <link rel="stylesheet" href="plugins/fontawesome/css/all.css" />
+
         <!-- MCUSTOMSCROLLBAR -->
         <link rel="stylesheet" href="plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.css" />
 
@@ -20,6 +26,9 @@
     </head>
 
     <body class="docs-body">
+        <!-- LOADER -->
+        <jsp:include page="includes/loader.jsp" />
+
         <!-- SVG ASSETS -->
         <jsp:include page="includes/svg-assets.jsp" />
 
@@ -45,9 +54,6 @@
 
         <!-- SCROLL TO TOP -->
         <button class="scroll-to-btn"><i class="fal fa-arrow-up"></i></button>
-
-        <!-- LOADER -->
-        <jsp:include page="includes/loader.jsp" />
 
         <!-- SEARCH -->
         <jsp:include page="includes/search.jsp" />

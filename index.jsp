@@ -6,6 +6,12 @@
         <title>CCAvenue Docs (Beta)</title>
         <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 
+        <!--FONT-->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+
+        <!--FONT AWESOME-->
+        <link rel="stylesheet" href="plugins/fontawesome/css/all.css" />
+
         <!-- SLICK -->
         <link rel="stylesheet" href="plugins/slick/slick.css" />
         <link rel="stylesheet" href="plugins/slick/slick-theme.css" />
@@ -21,6 +27,9 @@
     </head>
 
     <body>
+        <!-- LOADER -->
+        <jsp:include page="includes/loader.jsp" />
+
         <!-- SVG ASSETS -->
         <jsp:include page="includes/svg-assets.jsp" />
 
@@ -111,7 +120,7 @@
                         <h2 class="title">Online Payments</h2>
                         <ul class="list">
                             <li class="list-item">
-                                <a href="javascript:void(0)" class="list-link">
+                                <a href="docs.jsp#pages/itemized-invoice.jsp" class="list-link">
                                     <div class="ico">
                                         <svg class="ico-svg" viewBox="0 0 512 512">
                                             <use xlink:href="#ico-shield"></use>
@@ -131,7 +140,7 @@
                             </li>
 
                             <li class="list-item">
-                                <a href="javascript:void(0)" class="list-link">
+                                <a href="docs.jsp#pages/itemized-invoice.jsp" class="list-link">
                                     <div class="ico">
                                         <svg class="ico-svg" viewBox="0 0 512 512">
                                             <use xlink:href="#ico-shield"></use>
@@ -151,7 +160,7 @@
                             </li>
 
                             <li class="list-item">
-                                <a href="javascript:void(0)" class="list-link">
+                                <a href="docs.jsp#pages/itemized-invoice.jsp" class="list-link">
                                     <div class="ico">
                                         <svg class="ico-svg" viewBox="0 0 512 512">
                                             <use xlink:href="#ico-shield"></use>
@@ -171,7 +180,7 @@
                             </li>
 
                             <li class="list-item">
-                                <a href="javascript:void(0)" class="list-link">
+                                <a href="docs.jsp#pages/itemized-invoice.jsp" class="list-link">
                                     <div class="ico">
                                         <svg class="ico-svg" viewBox="0 0 512 512">
                                             <use xlink:href="#ico-shield"></use>
@@ -196,7 +205,7 @@
                         <h2 class="title">Offline Payment</h2>
                         <ul class="list">
                             <li class="list-item">
-                                <a href="javascript:void(0)" class="list-link">
+                                <a href="docs.jsp#pages/itemized-invoice.jsp" class="list-link">
                                     <div class="ico">
                                         <svg class="ico-svg" viewBox="0 0 512 512">
                                             <use xlink:href="#ico-shield"></use>
@@ -216,7 +225,7 @@
                             </li>
 
                             <li class="list-item">
-                                <a href="javascript:void(0)" class="list-link">
+                                <a href="docs.jsp#pages/itemized-invoice.jsp" class="list-link">
                                     <div class="ico">
                                         <svg class="ico-svg" viewBox="0 0 512 512">
                                             <use xlink:href="#ico-shield"></use>
@@ -236,7 +245,7 @@
                             </li>
 
                             <li class="list-item">
-                                <a href="javascript:void(0)" class="list-link">
+                                <a href="docs.jsp#pages/itemized-invoice.jsp" class="list-link">
                                     <div class="ico">
                                         <svg class="ico-svg" viewBox="0 0 512 512">
                                             <use xlink:href="#ico-shield"></use>
@@ -261,7 +270,7 @@
                         <h2 class="title">Marketing Tools</h2>
                         <ul class="list">
                             <li class="list-item">
-                                <a href="javascript:void(0)" class="list-link">
+                                <a href="docs.jsp#pages/itemized-invoice.jsp" class="list-link">
                                     <div class="ico">
                                         <svg class="ico-svg" viewBox="0 0 512 512">
                                             <use xlink:href="#ico-shield"></use>
@@ -281,7 +290,7 @@
                             </li>
 
                             <li class="list-item">
-                                <a href="javascript:void(0)" class="list-link">
+                                <a href="docs.jsp#pages/itemized-invoice.jsp" class="list-link">
                                     <div class="ico">
                                         <svg class="ico-svg" viewBox="0 0 512 512">
                                             <use xlink:href="#ico-shield"></use>
@@ -307,7 +316,7 @@
 
                         <ul class="list">
                             <li class="list-item">
-                                <a href="javascript:void(0)" class="list-link">
+                                <a href="docs.jsp#pages/itemized-invoice.jsp" class="list-link">
                                     <div class="ico">
                                         <svg class="ico-svg" viewBox="0 0 512 512">
                                             <use xlink:href="#ico-shield"></use>
@@ -325,7 +334,7 @@
                                 </a>
                             </li>
                             <li class="list-item">
-                                <a href="javascript:void(0)" class="list-link">
+                                <a href="docs.jsp#pages/itemized-invoice.jsp" class="list-link">
                                     <div class="ico">
                                         <svg class="ico-svg" viewBox="0 0 512 512">
                                             <use xlink:href="#ico-shield"></use>
@@ -343,7 +352,7 @@
                                 </a>
                             </li>
                             <li class="list-item">
-                                <a href="javascript:void(0)" class="list-link">
+                                <a href="docs.jsp#pages/itemized-invoice.jsp" class="list-link">
                                     <div class="ico">
                                         <svg class="ico-svg" viewBox="0 0 512 512">
                                             <use xlink:href="#ico-shield"></use>
@@ -361,7 +370,7 @@
                                 </a>
                             </li>
                             <li class="list-item">
-                                <a href="javascript:void(0)" class="list-link">
+                                <a href="docs.jsp#pages/itemized-invoice.jsp" class="list-link">
                                     <div class="ico">
                                         <svg class="ico-svg" viewBox="0 0 512 512">
                                             <use xlink:href="#ico-shield"></use>
@@ -379,7 +388,7 @@
                                 </a>
                             </li>
                             <li class="list-item">
-                                <a href="javascript:void(0)" class="list-link">
+                                <a href="docs.jsp#pages/itemized-invoice.jsp" class="list-link">
                                     <div class="ico">
                                         <svg class="ico-svg" viewBox="0 0 512 512">
                                             <use xlink:href="#ico-shield"></use>
@@ -397,7 +406,7 @@
                                 </a>
                             </li>
                             <li class="list-item">
-                                <a href="javascript:void(0)" class="list-link">
+                                <a href="docs.jsp#pages/itemized-invoice.jsp" class="list-link">
                                     <div class="ico">
                                         <svg class="ico-svg" viewBox="0 0 512 512">
                                             <use xlink:href="#ico-shield"></use>
@@ -421,7 +430,7 @@
                         <h2 class="title">Settlements</h2>
                         <ul class="list">
                             <li class="list-item">
-                                <a href="javascript:void(0)" class="list-link">
+                                <a href="docs.jsp#pages/itemized-invoice.jsp" class="list-link">
                                     <div class="ico">
                                         <svg class="ico-svg" viewBox="0 0 512 512">
                                             <use xlink:href="#ico-shield"></use>
@@ -440,7 +449,7 @@
                             </li>
 
                             <li class="list-item">
-                                <a href="javascript:void(0)" class="list-link">
+                                <a href="docs.jsp#pages/itemized-invoice.jsp" class="list-link">
                                     <div class="ico">
                                         <svg class="ico-svg" viewBox="0 0 512 512">
                                             <use xlink:href="#ico-shield"></use>
@@ -459,7 +468,7 @@
                             </li>
 
                             <li class="list-item">
-                                <a href="javascript:void(0)" class="list-link">
+                                <a href="docs.jsp#pages/itemized-invoice.jsp" class="list-link">
                                     <div class="ico">
                                         <svg class="ico-svg" viewBox="0 0 512 512">
                                             <use xlink:href="#ico-shield"></use>
@@ -483,7 +492,7 @@
                         <h2 class="title">Integretions</h2>
                         <ul class="list">
                             <li class="list-item">
-                                <a href="javascript:void(0)" class="list-link">
+                                <a href="docs.jsp#pages/itemized-invoice.jsp" class="list-link">
                                     <div class="ico">
                                         <svg class="ico-svg" viewBox="0 0 512 512">
                                             <use xlink:href="#ico-shield"></use>
@@ -502,7 +511,7 @@
                             </li>
 
                             <li class="list-item">
-                                <a href="javascript:void(0)" class="list-link">
+                                <a href="docs.jsp#pages/itemized-invoice.jsp" class="list-link">
                                     <div class="ico">
                                         <svg class="ico-svg" viewBox="0 0 512 512">
                                             <use xlink:href="#ico-shield"></use>
@@ -533,9 +542,6 @@
 
         <!-- SCROLL TO TOP -->
         <button class="scroll-to-btn"><i class="fal fa-arrow-up"></i></button>
-
-        <!-- LOADER -->
-        <jsp:include page="includes/loader.jsp" />
 
         <!-- JQUERY -->
         <script src="plugins/jquery/jquery.min.js"></script>
