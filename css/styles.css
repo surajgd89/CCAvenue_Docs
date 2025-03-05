@@ -6633,82 +6633,6 @@ body {
   color: #3a4c69;
 }
 
-.pattern {
-  min-height: 10rem;
-  background: #1572e8;
-  position: relative;
-}
-@media (max-width: 768px) {
-  .pattern {
-    min-height: 8rem;
-  }
-}
-.pattern .left,
-.pattern .right {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  right: 0;
-  top: 0;
-  overflow: hidden;
-}
-.pattern .left::before {
-  content: "";
-  width: 30rem;
-  height: 15rem;
-  background: rgba(255, 255, 255, 0.1);
-  position: absolute;
-  left: -9rem;
-  top: 0;
-  border-radius: 0.6rem;
-  -webkit-transform: skew(25deg, -12deg);
-          transform: skew(25deg, -12deg);
-  -webkit-transform-origin: top left;
-          transform-origin: top left;
-}
-.pattern .left::after {
-  content: "";
-  width: 15rem;
-  height: 60rem;
-  background: rgba(255, 255, 255, 0.15);
-  position: absolute;
-  left: 0px;
-  top: 3rem;
-  border-radius: 0.4rem;
-  -webkit-transform: skew(-25deg, 10deg);
-          transform: skew(-25deg, 10deg);
-  -webkit-transform-origin: top left;
-          transform-origin: top left;
-}
-.pattern .right::before {
-  content: "";
-  width: 30rem;
-  height: 15rem;
-  background: rgba(255, 255, 255, 0.1);
-  position: absolute;
-  right: -6rem;
-  top: 0;
-  border-radius: 0.4rem;
-  -webkit-transform: skew(25deg, -10deg);
-          transform: skew(25deg, -10deg);
-  -webkit-transform-origin: top left;
-          transform-origin: top left;
-}
-.pattern .right::after {
-  content: "";
-  width: 15rem;
-  height: 60rem;
-  background: rgba(255, 255, 255, 0.15);
-  position: absolute;
-  right: 0px;
-  top: 3rem;
-  border-radius: 0.6rem;
-  -webkit-transform: skew(25deg, 10deg);
-          transform: skew(25deg, 10deg);
-  -webkit-transform-origin: top left;
-          transform-origin: top left;
-}
-
 .docs-content {
   margin-left: 30rem;
   padding: 7rem 4rem 4rem 9rem;
@@ -7476,10 +7400,95 @@ body {
   cursor: pointer;
 }
 
+.footer-wrapper {
+  margin-left: 30rem;
+}
+@media (max-width: 992px) {
+  .footer-wrapper {
+    margin-left: 0;
+  }
+}
+
+.pattern {
+  min-height: 10rem;
+  background: #1572e8;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .pattern {
+    min-height: 8rem;
+  }
+}
+.pattern .left,
+.pattern .right {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+}
+.pattern .left::before {
+  content: "";
+  width: 30rem;
+  height: 15rem;
+  background: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  left: -9rem;
+  top: 0;
+  border-radius: 0.6rem;
+  -webkit-transform: skew(25deg, -12deg);
+          transform: skew(25deg, -12deg);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+.pattern .left::after {
+  content: "";
+  width: 15rem;
+  height: 60rem;
+  background: rgba(255, 255, 255, 0.15);
+  position: absolute;
+  left: 0px;
+  top: 3rem;
+  border-radius: 0.4rem;
+  -webkit-transform: skew(-25deg, 10deg);
+          transform: skew(-25deg, 10deg);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+.pattern .right::before {
+  content: "";
+  width: 30rem;
+  height: 15rem;
+  background: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  right: -6rem;
+  top: 0;
+  border-radius: 0.4rem;
+  -webkit-transform: skew(25deg, -10deg);
+          transform: skew(25deg, -10deg);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+.pattern .right::after {
+  content: "";
+  width: 15rem;
+  height: 60rem;
+  background: rgba(255, 255, 255, 0.15);
+  position: absolute;
+  right: 0px;
+  top: 3rem;
+  border-radius: 0.6rem;
+  -webkit-transform: skew(25deg, 10deg);
+          transform: skew(25deg, 10deg);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
 .footer {
   padding: 0 4rem;
   background: #fff;
-  min-height: 12rem;
+  min-height: 7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7645,4 +7654,13 @@ body {
 }
 .skeleton.skeleton-paragraph {
   margin-bottom: 1rem;
+}
+
+.footer-wrapper {
+  margin-left: 30rem;
+}
+@media (max-width: 992px) {
+  .footer-wrapper {
+    margin-left: 0;
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -205,7 +205,6 @@ body {
 @import "_search.scss";
 
 //IMAGE MODAL
-
 .image-modal {
     display: none;
     margin: auto;
@@ -235,11 +234,97 @@ body {
     }
 }
 
+// FOOTER-WRAPPER
+.footer-wrapper {
+    margin-left: 30rem;
+
+    @include lg {
+        margin-left: 0;
+    }
+}
+
+// PATTERN
+.pattern {
+    min-height: 10rem;
+    background: #1572e8;
+    position: relative;
+
+    @include md {
+        min-height: 8rem;
+    }
+
+    .left,
+    .right {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        right: 0;
+        top: 0;
+        overflow: hidden;
+    }
+
+    .left {
+        &::before {
+            content: "";
+            width: 30rem;
+            height: 15rem;
+            background: rgba(255, 255, 255, 0.1);
+            position: absolute;
+            left: -9rem;
+            top: 0;
+            border-radius: 0.6rem;
+            transform: skew(25deg, -12deg);
+            transform-origin: top left;
+        }
+
+        &::after {
+            content: "";
+            width: 15rem;
+            height: 60rem;
+            background: rgba(255, 255, 255, 0.15);
+            position: absolute;
+            left: 0px;
+            top: 3rem;
+            border-radius: 0.4rem;
+            transform: skew(-25deg, 10deg);
+            transform-origin: top left;
+        }
+    }
+
+    .right {
+        &::before {
+            content: "";
+            width: 30rem;
+            height: 15rem;
+            background: rgba(255, 255, 255, 0.1);
+            position: absolute;
+            right: -6rem;
+            top: 0;
+            border-radius: 0.4rem;
+            transform: skew(25deg, -10deg);
+            transform-origin: top left;
+        }
+
+        &::after {
+            content: "";
+            width: 15rem;
+            height: 60rem;
+            background: rgba(255, 255, 255, 0.15);
+            position: absolute;
+            right: 0px;
+            top: 3rem;
+            border-radius: 0.6rem;
+            transform: skew(25deg, 10deg);
+            transform-origin: top left;
+        }
+    }
+}
+
 // FOOTER
 .footer {
     padding: 0 4rem;
     background: #fff;
-    min-height: 12rem;
+    min-height: 7rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -376,5 +461,14 @@ body {
 
     &.skeleton-paragraph {
         margin-bottom: 1rem;
+    }
+}
+
+// FOOTER-WRAPPER
+.footer-wrapper {
+    margin-left: 30rem;
+
+    @include lg {
+        margin-left: 0;
     }
 }

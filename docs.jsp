@@ -46,6 +46,11 @@
             <section class="docs-content"></section>
         </main>
 
+        <!-- FOOTER -->
+        <div class="footer-wrapper">
+            <jsp:include page="includes/footer.jsp" />
+        </div>
+
         <!-- IMAGE MODAL -->
         <div class="image-modal">
             <span class="image-modal-close" id="closeBtn"><i class="fal fa-times"></i></span>
