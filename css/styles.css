@@ -5763,6 +5763,11 @@ body {
 .header .toggle-btn i {
   font-weight: 500;
 }
+.header .logo {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
 .header .logo .logo-svg {
   height: 2.8rem;
 }

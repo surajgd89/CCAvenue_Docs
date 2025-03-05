@@ -49,7 +49,7 @@ function ajaxload(url) {
         success: function (result, status) {
             setTimeout(function () {
                 $(".docs-content").html(result);
-                allFunctions();
+                ajaxFunctions();
             }, 2000);
         },
         error: function (status, error) {

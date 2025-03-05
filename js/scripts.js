@@ -68,7 +68,7 @@ $(function () {
     AOS.refresh();
 });
 
-function allFunctions() {
+function ajaxFunctions() {
     //PAGE INTER SCROLL
 
     $(".nav-item:first-child").addClass("active");
