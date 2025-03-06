@@ -7112,6 +7112,55 @@ body {
   margin-left: auto;
   margin-right: 0;
 }
+.docs-content .updated-date {
+  font-size: 1.3rem;
+  color: var(--text-light);
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.docs-content .updated-date i {
+  font-size: 1.5rem;
+  padding-right: 0.8rem;
+  opacity: 0.6;
+}
+.docs-content .pagination-page {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.docs-content .pagination-page a {
+  font-size: 1.5rem;
+  color: #1d2552;
+  font-weight: 600;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+.docs-content .pagination-page a:hover {
+  color: var(--link-hover);
+}
+.docs-content .pagination-page a i {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.docs-content .pagination-page a.prev-page i {
+  padding-right: 1rem;
+}
+.docs-content .pagination-page a.next-page i {
+  padding-left: 1rem;
+}
 
 .modal-open {
   overflow: hidden;

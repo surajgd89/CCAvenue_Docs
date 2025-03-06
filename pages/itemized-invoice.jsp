@@ -179,3 +179,12 @@
         </div>
     </div>
 </div>
+
+<!-- UPDATED DATE -->
+<section class="updated-date"><i class="fa-regular fa-watch"></i> Updated 5 months ago</section>
+
+<!-- PAGINATION -->
+<section class="pagination-page">
+    <a href="javascript:void(0)" class="prev-page"><i class="fa-regular fa-arrow-left"></i> Previous</a>
+    <a href="javascript:void(0)" class="next-page">Next <i class="fa-regular fa-arrow-right"></i></a>
+</section>
