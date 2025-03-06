@@ -38,6 +38,9 @@
         min-height: 5rem;
         column-gap: 1rem;
         cursor: pointer;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
 
         @include md {
             margin-bottom: 1.5rem;

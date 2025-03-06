@@ -79,7 +79,7 @@ $(function () {
     });
 
     $(".search-control .typeahead").bind("typeahead:select", function (event, suggestion) {
-        console.log(event.type);
+        //console.log(event.type);
         searchModal_Calc(event);
     });
 });
@@ -87,12 +87,20 @@ $(function () {
 function searchModal_Pos(event) {
     if ($(window).width() > 768) {
         let search_Offset = $(event).offset();
-        console.log(search_Offset);
+        //console.log(search_Offset);
         let searchModalBody_PD = parseInt($(".search-modal-body").css("padding"));
-        $(".search-modal-content").css({
-            marginTop: search_Offset.top - searchModalBody_PD,
-            marginLeft: search_Offset.left - searchModalBody_PD,
-        });
+
+        if ($(event).parent().hasClass("header")) {
+            $(".search-modal-content").css({
+                marginTop: search_Offset.top,
+                marginLeft: search_Offset.left - searchModalBody_PD,
+            });
+        } else {
+            $(".search-modal-content").css({
+                marginTop: search_Offset.top - searchModalBody_PD,
+                marginLeft: search_Offset.left - searchModalBody_PD,
+            });
+        }
     }
 }
 
