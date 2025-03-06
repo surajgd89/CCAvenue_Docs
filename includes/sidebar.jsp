@@ -59,7 +59,7 @@
             </ul>
         </li>
         <li>
-            <a href="javascript:void(0)">Offline Payment</a>
+            <a href="javascript:void(0)">Offline Payments</a>
             <ul class="child">
                 <li>
                     <a href="#pages/tappay.jsp">TapPay</a>
